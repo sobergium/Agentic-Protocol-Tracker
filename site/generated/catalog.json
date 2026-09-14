@@ -1,1 +1,1355 @@
-{"registryVersion":"1.0.0","publicationState":"published_provisional","counts":{"entities":0,"sources":0,"domains":0,"scanned":0,"errors":0},"domains":[],"entities":[]}
+{
+  "counts": {
+    "domains": 11,
+    "entities": 60,
+    "errors": 13,
+    "scanned": 53,
+    "sources": 66
+  },
+  "domains": [
+    "agent_interoperability",
+    "agent_runtimes",
+    "agentic_commerce",
+    "agentic_payments",
+    "blockchain_payments",
+    "financial_services",
+    "foundation_models",
+    "identity_authorization",
+    "regulation",
+    "research",
+    "transaction_infrastructure"
+  ],
+  "entities": [
+    {
+      "domains": [
+        "agent_interoperability"
+      ],
+      "id": "protocol-mcp",
+      "jurisdiction": "global",
+      "name": "Model Context Protocol",
+      "sources": [
+        {
+          "canonicalUrl": "https://modelcontextprotocol.io/specification/latest",
+          "contentHash": "f32ec683290d50bedf0353eb8205f80d5f3bd27515cd0ce74b117124f35defd4",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "mcp-spec",
+          "sourceType": "specification"
+        },
+        {
+          "canonicalUrl": "https://github.com/modelcontextprotocol/modelcontextprotocol",
+          "contentHash": "941efd4cd20b67fce2d48a76194862831f51bde2a5e5f423f795f3d68c46d57e",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "mcp-repo",
+          "sourceType": "github_repository"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Linux Foundation / AAIF",
+      "type": "protocol"
+    },
+    {
+      "domains": [
+        "agent_interoperability"
+      ],
+      "id": "protocol-a2a",
+      "jurisdiction": "global",
+      "name": "Agent2Agent Protocol",
+      "sources": [
+        {
+          "canonicalUrl": "https://github.com/a2aproject/A2A",
+          "contentHash": "7eb5ee50a059bda2ce96b38190def1bc0f1babcaaaeaa16266d1c36fb693b2d8",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "a2a-repo",
+          "sourceType": "github_repository"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Linux Foundation / A2A Project",
+      "type": "protocol"
+    },
+    {
+      "domains": [
+        "agent_interoperability"
+      ],
+      "id": "protocol-ag-ui",
+      "jurisdiction": "global",
+      "name": "Agent-User Interaction Protocol",
+      "sources": [
+        {
+          "canonicalUrl": "https://github.com/ag-ui-protocol/ag-ui",
+          "contentHash": "51b8d72cb9cfc794d90df1af408046d0dcac67eb8d4e8c0556765638bc912987",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "ag-ui-repo",
+          "sourceType": "github_repository"
+        }
+      ],
+      "status": "tracked",
+      "steward": "AG-UI",
+      "type": "protocol"
+    },
+    {
+      "domains": [
+        "agent_interoperability"
+      ],
+      "id": "protocol-anp",
+      "jurisdiction": "global",
+      "name": "Agent Network Protocol",
+      "sources": [
+        {
+          "canonicalUrl": "https://github.com/agent-network-protocol/AgentNetworkProtocol",
+          "contentHash": "41e05cc83a375e4e439e7e6a161ff4a2e4cacf4855acd169bd68fa12e508bad6",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "anp-repo",
+          "sourceType": "github_repository"
+        }
+      ],
+      "status": "tracked",
+      "steward": "ANP Community",
+      "type": "protocol"
+    },
+    {
+      "domains": [
+        "agentic_commerce"
+      ],
+      "id": "protocol-acp-commerce",
+      "jurisdiction": "global",
+      "name": "Agentic Commerce Protocol",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.agenticcommerce.dev/",
+          "contentHash": "ca912c7580433c8c3363e31153aafe191a9628ca0815c346915690545e270cca",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "acp-commerce-spec",
+          "sourceType": "specification"
+        }
+      ],
+      "status": "tracked",
+      "steward": "OpenAI and Stripe",
+      "type": "protocol"
+    },
+    {
+      "domains": [
+        "agentic_commerce"
+      ],
+      "id": "protocol-ucp",
+      "jurisdiction": "global",
+      "name": "Universal Commerce Protocol",
+      "sources": [
+        {
+          "canonicalUrl": "https://ucp.dev/",
+          "contentHash": "b98889e7751a391314f51d14a2c6278f81a0fd35c764873d2487a217c3bf1b73",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "ucp-spec",
+          "sourceType": "specification"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Google and Shopify",
+      "type": "protocol"
+    },
+    {
+      "domains": [
+        "agentic_commerce",
+        "agentic_payments"
+      ],
+      "id": "protocol-ap2",
+      "jurisdiction": "global",
+      "name": "Agent Payments Protocol",
+      "sources": [
+        {
+          "canonicalUrl": "https://github.com/google-agentic-commerce/AP2",
+          "contentHash": "1fc69e4ae93f08059f52adf9d22cb341db0a72f90e485821efb05c472991b97a",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "ap2-repo",
+          "sourceType": "github_repository"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Google",
+      "type": "protocol"
+    },
+    {
+      "domains": [
+        "agentic_payments"
+      ],
+      "id": "protocol-x402",
+      "jurisdiction": "global",
+      "name": "x402",
+      "sources": [
+        {
+          "canonicalUrl": "https://docs.x402.org/",
+          "contentHash": "b10817f1c80c899da57cf9e564030a93f369c65810bfc426d81076ab131ba9ce",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "x402-docs",
+          "sourceType": "documentation"
+        },
+        {
+          "canonicalUrl": "https://github.com/coinbase/x402",
+          "contentHash": "0f0b87ba8ca92ec5fd19dc70efc54753a702789d68e220f17a5aec2b178dec70",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "x402-repo",
+          "sourceType": "github_repository"
+        }
+      ],
+      "status": "tracked",
+      "steward": "x402 Foundation / Coinbase",
+      "type": "protocol"
+    },
+    {
+      "domains": [
+        "agentic_payments",
+        "identity_authorization"
+      ],
+      "id": "protocol-visa-tap",
+      "jurisdiction": "global",
+      "name": "Visa Trusted Agent Protocol",
+      "sources": [
+        {
+          "canonicalUrl": "https://developer.visa.com/capabilities/trusted-agent-protocol",
+          "contentHash": "fafee57abeaaef09a016f7db5033372bccee853ec644935d1796716b9b405c0a",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "visa-tap",
+          "sourceType": "documentation"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Visa",
+      "type": "protocol"
+    },
+    {
+      "domains": [
+        "agentic_payments"
+      ],
+      "id": "product-mastercard-agent-pay",
+      "jurisdiction": "global",
+      "name": "Mastercard Agent Pay",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.mastercard.com/news/perspectives/2025/mastercard-agent-pay/",
+          "contentHash": null,
+          "reviewStatus": "unreviewed",
+          "scanStatus": "error",
+          "sourceId": "mastercard-agent-pay",
+          "sourceType": "press_room"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Mastercard",
+      "type": "infrastructure_provider"
+    },
+    {
+      "domains": [
+        "identity_authorization"
+      ],
+      "id": "standard-oauth",
+      "jurisdiction": "global",
+      "name": "OAuth",
+      "sources": [
+        {
+          "canonicalUrl": "https://datatracker.ietf.org/wg/oauth/documents/",
+          "contentHash": "b686c7fa104f99e3c38bd9837f0a9dbdf634867328f7d8bd03736418a6dac821",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "ietf-oauth-documents",
+          "sourceType": "standards_index"
+        }
+      ],
+      "status": "tracked",
+      "steward": "IETF",
+      "type": "standard"
+    },
+    {
+      "domains": [
+        "identity_authorization",
+        "financial_services"
+      ],
+      "id": "standard-fapi",
+      "jurisdiction": "global",
+      "name": "Financial-grade API",
+      "sources": [
+        {
+          "canonicalUrl": "https://openid.net/wg/fapi/specifications/",
+          "contentHash": "9deffb66ce571c3c3d1ae474d23e95b0bade09a43fef7146985bc70d9d1b2510",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "openid-fapi",
+          "sourceType": "standards_index"
+        }
+      ],
+      "status": "tracked",
+      "steward": "OpenID Foundation",
+      "type": "standard"
+    },
+    {
+      "domains": [
+        "identity_authorization"
+      ],
+      "id": "standard-did",
+      "jurisdiction": "global",
+      "name": "Decentralized Identifiers",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.w3.org/TR/did-core/",
+          "contentHash": "5e44345740d9bfaa852d3b66c57e98c9beb6c5bf6083b0126dd5daac377b9993",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "w3c-did",
+          "sourceType": "specification"
+        }
+      ],
+      "status": "tracked",
+      "steward": "W3C",
+      "type": "standard"
+    },
+    {
+      "domains": [
+        "identity_authorization"
+      ],
+      "id": "standard-vc",
+      "jurisdiction": "global",
+      "name": "Verifiable Credentials",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.w3.org/TR/vc-data-model-2.0/",
+          "contentHash": "a9196a3d0b6601356c4e127bad24f8c7f2c17f6ed22e41b35755a910104156f8",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "w3c-vc",
+          "sourceType": "specification"
+        }
+      ],
+      "status": "tracked",
+      "steward": "W3C",
+      "type": "standard"
+    },
+    {
+      "domains": [
+        "identity_authorization"
+      ],
+      "id": "standard-fido",
+      "jurisdiction": "global",
+      "name": "FIDO and WebAuthn",
+      "sources": [
+        {
+          "canonicalUrl": "https://fidoalliance.org/specifications/",
+          "contentHash": "e54a131e5f66ef1fd0f2174ad4b49f1eba1b171621401efb2f7264228757c4bd",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "fido-specifications",
+          "sourceType": "standards_index"
+        }
+      ],
+      "status": "tracked",
+      "steward": "FIDO Alliance / W3C",
+      "type": "standard"
+    },
+    {
+      "domains": [
+        "blockchain_payments"
+      ],
+      "id": "standard-erc4337",
+      "jurisdiction": "global",
+      "name": "ERC-4337 Account Abstraction",
+      "sources": [
+        {
+          "canonicalUrl": "https://eips.ethereum.org/EIPS/eip-4337",
+          "contentHash": "ba69db925f98b811c8b73915af67c25fa70fc8d5d8c8f2c4166ab376e0fcb115",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "erc4337",
+          "sourceType": "specification"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Ethereum Community",
+      "type": "standard"
+    },
+    {
+      "domains": [
+        "transaction_infrastructure"
+      ],
+      "id": "standard-iso20022",
+      "jurisdiction": "global",
+      "name": "ISO 20022",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.iso20022.org/",
+          "contentHash": null,
+          "reviewStatus": "unreviewed",
+          "scanStatus": "error",
+          "sourceId": "iso20022",
+          "sourceType": "standards_index"
+        }
+      ],
+      "status": "tracked",
+      "steward": "ISO",
+      "type": "standard"
+    },
+    {
+      "domains": [
+        "transaction_infrastructure"
+      ],
+      "id": "standard-emvco",
+      "jurisdiction": "global",
+      "name": "EMV Specifications",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.emvco.com/emv-technologies/",
+          "contentHash": "2b1f464e51ae3b0f20090a9b43a92f4d112e8836d093ce4e181d382de16bf9ff",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "emvco-specifications",
+          "sourceType": "standards_index"
+        }
+      ],
+      "status": "tracked",
+      "steward": "EMVCo",
+      "type": "standard"
+    },
+    {
+      "domains": [
+        "transaction_infrastructure"
+      ],
+      "id": "standard-pci",
+      "jurisdiction": "global",
+      "name": "PCI Security Standards",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.pcisecuritystandards.org/standards/",
+          "contentHash": "7898614660e2d58e5b197a91a52d68d58d54ac9ae8061d3798237abed7511f28",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "pci-standards",
+          "sourceType": "standards_index"
+        }
+      ],
+      "status": "tracked",
+      "steward": "PCI SSC",
+      "type": "standard"
+    },
+    {
+      "domains": [
+        "transaction_infrastructure"
+      ],
+      "id": "standard-web-payments",
+      "jurisdiction": "global",
+      "name": "W3C Web Payments",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.w3.org/TR/payment-request/",
+          "contentHash": "73ba1df87315aeaa000b45e8041d3e1208ca132f146fe2d53ca992d5fbff740e",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "w3c-webpayments",
+          "sourceType": "specification"
+        }
+      ],
+      "status": "tracked",
+      "steward": "W3C",
+      "type": "standard"
+    },
+    {
+      "domains": [
+        "transaction_infrastructure"
+      ],
+      "id": "rail-swift",
+      "jurisdiction": "global",
+      "name": "SWIFT",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.swift.com/standards/iso-20022",
+          "contentHash": null,
+          "reviewStatus": "unreviewed",
+          "scanStatus": "error",
+          "sourceId": "swift-iso20022",
+          "sourceType": "documentation"
+        }
+      ],
+      "status": "tracked",
+      "steward": "SWIFT",
+      "type": "payment_rail"
+    },
+    {
+      "domains": [
+        "transaction_infrastructure"
+      ],
+      "id": "rail-fednow",
+      "jurisdiction": "US",
+      "name": "FedNow Service",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.frbservices.org/financial-services/fednow",
+          "contentHash": "3775a8a127ee341853594f436e01b0b5ac5024d23a27b1d8ca351f3bbf375dfa",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "fednow",
+          "sourceType": "payment_network"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Federal Reserve",
+      "type": "payment_rail"
+    },
+    {
+      "domains": [
+        "transaction_infrastructure"
+      ],
+      "id": "rail-rtp",
+      "jurisdiction": "US",
+      "name": "RTP Network",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.theclearinghouse.org/payment-systems/rtp",
+          "contentHash": "b9e6a7beb5af301e44c132152a29777b98f965da57833eeae5d24ff1e51044a9",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "tch-rtp",
+          "sourceType": "payment_network"
+        }
+      ],
+      "status": "tracked",
+      "steward": "The Clearing House",
+      "type": "payment_rail"
+    },
+    {
+      "domains": [
+        "transaction_infrastructure"
+      ],
+      "id": "rail-sepa",
+      "jurisdiction": "EU",
+      "name": "SEPA",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.europeanpaymentscouncil.eu/what-we-do/sepa-payment-schemes",
+          "contentHash": null,
+          "reviewStatus": "unreviewed",
+          "scanStatus": "error",
+          "sourceId": "epc-sepa",
+          "sourceType": "payment_network"
+        }
+      ],
+      "status": "tracked",
+      "steward": "European Payments Council",
+      "type": "payment_rail"
+    },
+    {
+      "domains": [
+        "transaction_infrastructure"
+      ],
+      "id": "rail-upi",
+      "jurisdiction": "India",
+      "name": "Unified Payments Interface",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.npci.org.in/what-we-do/upi/product-overview",
+          "contentHash": null,
+          "reviewStatus": "unreviewed",
+          "scanStatus": "error",
+          "sourceId": "npci-upi",
+          "sourceType": "payment_network"
+        }
+      ],
+      "status": "tracked",
+      "steward": "NPCI",
+      "type": "payment_rail"
+    },
+    {
+      "domains": [
+        "transaction_infrastructure"
+      ],
+      "id": "rail-pix",
+      "jurisdiction": "Brazil",
+      "name": "Pix",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.bcb.gov.br/en/financialstability/pix_en",
+          "contentHash": "40df034b6b4f975c96f785a359da4ce4bf48572fcbc52ee96ad2a2d934f37952",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "bcb-pix",
+          "sourceType": "payment_network"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Banco Central do Brasil",
+      "type": "payment_rail"
+    },
+    {
+      "domains": [
+        "blockchain_payments"
+      ],
+      "id": "chain-ethereum",
+      "jurisdiction": "global",
+      "name": "Ethereum",
+      "sources": [
+        {
+          "canonicalUrl": "https://github.com/ethereum/consensus-specs",
+          "contentHash": "ee33af792de94e27293d61387480df45785b9f991d47fdc49812bca80d4c42a4",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "ethereum-specs",
+          "sourceType": "github_repository"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Ethereum Foundation",
+      "type": "infrastructure_provider"
+    },
+    {
+      "domains": [
+        "blockchain_payments"
+      ],
+      "id": "chain-solana",
+      "jurisdiction": "global",
+      "name": "Solana",
+      "sources": [
+        {
+          "canonicalUrl": "https://solana.com/docs",
+          "contentHash": "be5d0a6a73703fbfb7357377d0d9586f5c03577ee315677bdd0f7e465b95291c",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "solana-docs",
+          "sourceType": "documentation"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Solana Foundation",
+      "type": "infrastructure_provider"
+    },
+    {
+      "domains": [
+        "blockchain_payments",
+        "financial_services"
+      ],
+      "id": "issuer-circle",
+      "jurisdiction": "global",
+      "name": "Circle / USDC",
+      "sources": [
+        {
+          "canonicalUrl": "https://developers.circle.com/stablecoins/",
+          "contentHash": "70541cf9a8e90284d0e9218a61a5d497adbdd3bab73f279f10aafa4d09aad73c",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "circle-usdc",
+          "sourceType": "documentation"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Circle",
+      "type": "infrastructure_provider"
+    },
+    {
+      "domains": [
+        "foundation_models",
+        "agent_runtimes"
+      ],
+      "id": "provider-openai",
+      "jurisdiction": "global",
+      "name": "OpenAI",
+      "sources": [
+        {
+          "canonicalUrl": "https://platform.openai.com/docs/models",
+          "contentHash": "79298a6232556a4bed04406ea13f6e07fbac9ab1ec8f2dabc9faef1ed640e4a8",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "openai-models",
+          "sourceType": "model_catalog"
+        },
+        {
+          "canonicalUrl": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "contentHash": null,
+          "reviewStatus": "unreviewed",
+          "scanStatus": "error",
+          "sourceId": "openai-release-notes",
+          "sourceType": "release_notes"
+        }
+      ],
+      "status": "tracked",
+      "steward": "OpenAI",
+      "type": "model_provider"
+    },
+    {
+      "domains": [
+        "foundation_models",
+        "agent_runtimes"
+      ],
+      "id": "provider-anthropic",
+      "jurisdiction": "global",
+      "name": "Anthropic",
+      "sources": [
+        {
+          "canonicalUrl": "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+          "contentHash": "5bde6c9cbe76d73fdb93a1ad71352d2649914d3a9cb090fde886f96f696750c0",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "anthropic-models",
+          "sourceType": "model_catalog"
+        },
+        {
+          "canonicalUrl": "https://docs.anthropic.com/en/release-notes/overview",
+          "contentHash": "b1e770b1bf5d9c23b2c151c6c8e55572d86dc5c2b11005bd61a6abaffd999cf7",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "anthropic-release-notes",
+          "sourceType": "release_notes"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Anthropic",
+      "type": "model_provider"
+    },
+    {
+      "domains": [
+        "foundation_models",
+        "agent_runtimes"
+      ],
+      "id": "provider-google",
+      "jurisdiction": "global",
+      "name": "Google Gemini",
+      "sources": [
+        {
+          "canonicalUrl": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models",
+          "contentHash": "12d6b1dcb856ab3effca9b8a3c5d8a3131536f5123a4c3cab43156b97370c86b",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "google-models",
+          "sourceType": "model_catalog"
+        },
+        {
+          "canonicalUrl": "https://cloud.google.com/vertex-ai/generative-ai/docs/release-notes",
+          "contentHash": "91d66e4b6b0247393481616d188fc847abc9373970bda5c1e76c09c037761062",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "google-release-notes",
+          "sourceType": "release_notes"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Google",
+      "type": "model_provider"
+    },
+    {
+      "domains": [
+        "foundation_models"
+      ],
+      "id": "provider-meta",
+      "jurisdiction": "global",
+      "name": "Meta Llama",
+      "sources": [
+        {
+          "canonicalUrl": "https://github.com/meta-llama/llama-models",
+          "contentHash": "2adbfa0a37a953266b2fe7d73b76134a7523304e1e30b617ece699e1a9d7f4e8",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "meta-llama",
+          "sourceType": "github_repository"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Meta",
+      "type": "model_provider"
+    },
+    {
+      "domains": [
+        "foundation_models"
+      ],
+      "id": "provider-mistral",
+      "jurisdiction": "global",
+      "name": "Mistral AI",
+      "sources": [
+        {
+          "canonicalUrl": "https://docs.mistral.ai/getting-started/models/models_overview/",
+          "contentHash": "7cdeae7d78dd5dd0a367447acaa3eb1b722f2f45538cf6d8017cd81460ac7b87",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "mistral-models",
+          "sourceType": "model_catalog"
+        },
+        {
+          "canonicalUrl": "https://docs.mistral.ai/resources/changelog/",
+          "contentHash": null,
+          "reviewStatus": "unreviewed",
+          "scanStatus": "error",
+          "sourceId": "mistral-changelog",
+          "sourceType": "release_notes"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Mistral AI",
+      "type": "model_provider"
+    },
+    {
+      "domains": [
+        "foundation_models"
+      ],
+      "id": "provider-cohere",
+      "jurisdiction": "global",
+      "name": "Cohere",
+      "sources": [
+        {
+          "canonicalUrl": "https://docs.cohere.com/docs/models",
+          "contentHash": "f9c0e3c5722abe215b04c37a2e1f03f847fef8653c630c1e62dd15157fc9ee34",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "cohere-models",
+          "sourceType": "model_catalog"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Cohere",
+      "type": "model_provider"
+    },
+    {
+      "domains": [
+        "foundation_models"
+      ],
+      "id": "provider-xai",
+      "jurisdiction": "global",
+      "name": "xAI",
+      "sources": [
+        {
+          "canonicalUrl": "https://docs.x.ai/docs/models",
+          "contentHash": "eb6c97880f8c7c974ca56bba1228e836368d71d9f25754da99d245a06a401c08",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "xai-models",
+          "sourceType": "model_catalog"
+        }
+      ],
+      "status": "tracked",
+      "steward": "xAI",
+      "type": "model_provider"
+    },
+    {
+      "domains": [
+        "foundation_models",
+        "agent_runtimes"
+      ],
+      "id": "platform-bedrock",
+      "jurisdiction": "global",
+      "name": "Amazon Bedrock",
+      "sources": [
+        {
+          "canonicalUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+          "contentHash": "d4f174ede465ab564ecaf923dd6a606a69543168e4eaa95b43bf339de638a5a2",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "bedrock-models",
+          "sourceType": "model_catalog"
+        }
+      ],
+      "status": "tracked",
+      "steward": "AWS",
+      "type": "infrastructure_provider"
+    },
+    {
+      "domains": [
+        "foundation_models",
+        "agent_runtimes"
+      ],
+      "id": "platform-azure-ai",
+      "jurisdiction": "global",
+      "name": "Azure AI Foundry",
+      "sources": [
+        {
+          "canonicalUrl": "https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/foundry-models-overview",
+          "contentHash": "a06688cdb56a3061d0eb7163be0e55b0915c78182c9a337a0e4a41d0f60a8b83",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "azure-model-catalog",
+          "sourceType": "model_catalog"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Microsoft",
+      "type": "infrastructure_provider"
+    },
+    {
+      "domains": [
+        "agent_runtimes"
+      ],
+      "id": "runtime-openai-agents",
+      "jurisdiction": "global",
+      "name": "OpenAI Agents SDK",
+      "sources": [
+        {
+          "canonicalUrl": "https://github.com/openai/openai-agents-python",
+          "contentHash": "64cc17d902c686a87e85c92a74acc8993c2958e10bb121a88d60bf1b98174774",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "openai-agents-repo",
+          "sourceType": "github_repository"
+        }
+      ],
+      "status": "tracked",
+      "steward": "OpenAI",
+      "type": "agent_runtime"
+    },
+    {
+      "domains": [
+        "agent_runtimes"
+      ],
+      "id": "runtime-google-adk",
+      "jurisdiction": "global",
+      "name": "Google Agent Development Kit",
+      "sources": [
+        {
+          "canonicalUrl": "https://github.com/google/adk-python",
+          "contentHash": "0b9bf556ba0828c1a39bd47f8123f26d551ccff671ff6e94938e569aee2fd3f8",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "google-adk-repo",
+          "sourceType": "github_repository"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Google",
+      "type": "agent_runtime"
+    },
+    {
+      "domains": [
+        "agent_runtimes"
+      ],
+      "id": "runtime-autogen",
+      "jurisdiction": "global",
+      "name": "Microsoft AutoGen",
+      "sources": [
+        {
+          "canonicalUrl": "https://github.com/microsoft/autogen",
+          "contentHash": "6d550e11c0403b94def5fc08ea3ff6251185c820c790adabbc00f6398964d332",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "autogen-repo",
+          "sourceType": "github_repository"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Microsoft",
+      "type": "agent_runtime"
+    },
+    {
+      "domains": [
+        "agent_runtimes"
+      ],
+      "id": "runtime-semantic-kernel",
+      "jurisdiction": "global",
+      "name": "Semantic Kernel",
+      "sources": [
+        {
+          "canonicalUrl": "https://github.com/microsoft/semantic-kernel",
+          "contentHash": "b814882c827c783420f75f5148ae0d94ec7382ce8bd872a185f5575b90d8b0ed",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "semantic-kernel-repo",
+          "sourceType": "github_repository"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Microsoft",
+      "type": "agent_runtime"
+    },
+    {
+      "domains": [
+        "agent_runtimes"
+      ],
+      "id": "runtime-langgraph",
+      "jurisdiction": "global",
+      "name": "LangGraph",
+      "sources": [
+        {
+          "canonicalUrl": "https://github.com/langchain-ai/langgraph",
+          "contentHash": "de165d3c4b9f0a8e951008cbcac26dbdd3179d6815645c3dbc9a6cf323a371ed",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "langgraph-repo",
+          "sourceType": "github_repository"
+        }
+      ],
+      "status": "tracked",
+      "steward": "LangChain",
+      "type": "agent_runtime"
+    },
+    {
+      "domains": [
+        "agent_runtimes"
+      ],
+      "id": "runtime-crewai",
+      "jurisdiction": "global",
+      "name": "CrewAI",
+      "sources": [
+        {
+          "canonicalUrl": "https://github.com/crewAIInc/crewAI",
+          "contentHash": "14a076ed57039142219110979d6729a9e32acdd829bf94ac9bf3cac2d6f7feb6",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "crewai-repo",
+          "sourceType": "github_repository"
+        }
+      ],
+      "status": "tracked",
+      "steward": "CrewAI",
+      "type": "agent_runtime"
+    },
+    {
+      "domains": [
+        "agent_runtimes"
+      ],
+      "id": "runtime-pydantic-ai",
+      "jurisdiction": "global",
+      "name": "PydanticAI",
+      "sources": [
+        {
+          "canonicalUrl": "https://github.com/pydantic/pydantic-ai",
+          "contentHash": "7584bc0dba3a1622758185b05cfb85b4ed7524145d92f6749f1834b17a9862ab",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "pydantic-ai-repo",
+          "sourceType": "github_repository"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Pydantic",
+      "type": "agent_runtime"
+    },
+    {
+      "domains": [
+        "agent_runtimes"
+      ],
+      "id": "runtime-llamaindex",
+      "jurisdiction": "global",
+      "name": "LlamaIndex",
+      "sources": [
+        {
+          "canonicalUrl": "https://github.com/run-llama/llama_index",
+          "contentHash": "5336358c46feb7d4bcaef5cb34c124d7ce05f80e3a505022e1bfa0c12f00cf9d",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "llamaindex-repo",
+          "sourceType": "github_repository"
+        }
+      ],
+      "status": "tracked",
+      "steward": "LlamaIndex",
+      "type": "agent_runtime"
+    },
+    {
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "id": "regulator-bis",
+      "jurisdiction": "global",
+      "name": "Bank for International Settlements",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.bis.org/topic/artificial_intelligence.htm",
+          "contentHash": null,
+          "reviewStatus": "unreviewed",
+          "scanStatus": "error",
+          "sourceId": "bis-ai",
+          "sourceType": "regulatory_publications"
+        }
+      ],
+      "status": "tracked",
+      "steward": "BIS",
+      "type": "standards_body"
+    },
+    {
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "id": "regulator-fsb",
+      "jurisdiction": "global",
+      "name": "Financial Stability Board",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.fsb.org/work-of-the-fsb/financial-innovation-and-structural-change/artificial-intelligence-and-machine-learning/",
+          "contentHash": "0506be2f359acfbf5e5462fdda6eb9612d2b3e45de288c37bac0e3163d5308a0",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "fsb-publications",
+          "sourceType": "regulatory_publications"
+        }
+      ],
+      "status": "tracked",
+      "steward": "FSB",
+      "type": "standards_body"
+    },
+    {
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "id": "regulator-iosco",
+      "jurisdiction": "global",
+      "name": "IOSCO",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.iosco.org/library/index.cfm?section=pubdocs",
+          "contentHash": null,
+          "reviewStatus": "unreviewed",
+          "scanStatus": "error",
+          "sourceId": "iosco-publications",
+          "sourceType": "regulatory_publications"
+        }
+      ],
+      "status": "tracked",
+      "steward": "IOSCO",
+      "type": "standards_body"
+    },
+    {
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "id": "regulator-fatf",
+      "jurisdiction": "global",
+      "name": "Financial Action Task Force",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.fatf-gafi.org/en/publications.html",
+          "contentHash": null,
+          "reviewStatus": "unreviewed",
+          "scanStatus": "error",
+          "sourceId": "fatf-publications",
+          "sourceType": "regulatory_publications"
+        }
+      ],
+      "status": "tracked",
+      "steward": "FATF",
+      "type": "standards_body"
+    },
+    {
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "id": "regulator-fed",
+      "jurisdiction": "US",
+      "name": "Federal Reserve",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.federalreserve.gov/newsevents.htm",
+          "contentHash": "ae557e15d9329390cb6983ddeb5c861a9510a4d9146405f3d4640055634b8844",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "fed-innovation",
+          "sourceType": "regulatory_publications"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Federal Reserve",
+      "type": "regulator"
+    },
+    {
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "id": "regulator-sec",
+      "jurisdiction": "US",
+      "name": "US Securities and Exchange Commission",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.sec.gov/newsroom",
+          "contentHash": null,
+          "reviewStatus": "unreviewed",
+          "scanStatus": "error",
+          "sourceId": "sec-news",
+          "sourceType": "regulatory_publications"
+        }
+      ],
+      "status": "tracked",
+      "steward": "SEC",
+      "type": "regulator"
+    },
+    {
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "id": "regulator-ecb",
+      "jurisdiction": "EU",
+      "name": "European Central Bank",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.ecb.europa.eu/home/search/html/artificial-intelligence.en.html",
+          "contentHash": null,
+          "reviewStatus": "unreviewed",
+          "scanStatus": "error",
+          "sourceId": "ecb-ai",
+          "sourceType": "regulatory_publications"
+        }
+      ],
+      "status": "tracked",
+      "steward": "ECB",
+      "type": "regulator"
+    },
+    {
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "id": "regulator-eba",
+      "jurisdiction": "EU",
+      "name": "European Banking Authority",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.eba.europa.eu/publications-and-media",
+          "contentHash": "d716d01d384660429010eae903d19e60d4efc71d2ed854022cec9a4c940ffe9a",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "eba-publications",
+          "sourceType": "regulatory_publications"
+        }
+      ],
+      "status": "tracked",
+      "steward": "EBA",
+      "type": "regulator"
+    },
+    {
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "id": "regulator-fca",
+      "jurisdiction": "UK",
+      "name": "Financial Conduct Authority",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.fca.org.uk/firms/innovation/ai",
+          "contentHash": null,
+          "reviewStatus": "unreviewed",
+          "scanStatus": "error",
+          "sourceId": "fca-ai",
+          "sourceType": "regulatory_publications"
+        }
+      ],
+      "status": "tracked",
+      "steward": "FCA",
+      "type": "regulator"
+    },
+    {
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "id": "regulator-rbi",
+      "jurisdiction": "India",
+      "name": "Reserve Bank of India",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.rbi.org.in/Scripts/NotificationUser.aspx",
+          "contentHash": "fc35ba8634b8110c274a3034ce0a3f33a47ef0f16cca398e739cefb3a9e4b9df",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "rbi-notifications",
+          "sourceType": "regulatory_publications"
+        }
+      ],
+      "status": "tracked",
+      "steward": "RBI",
+      "type": "regulator"
+    },
+    {
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "id": "regulator-sebi",
+      "jurisdiction": "India",
+      "name": "Securities and Exchange Board of India",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&ssid=7&smid=0",
+          "contentHash": "a6c6c448c176fd95942edbdc0e4de289560c4da12c4bed450ff48931074e7e09",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "sebi-circulars",
+          "sourceType": "regulatory_publications"
+        }
+      ],
+      "status": "tracked",
+      "steward": "SEBI",
+      "type": "regulator"
+    },
+    {
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "id": "regulator-mas",
+      "jurisdiction": "Singapore",
+      "name": "Monetary Authority of Singapore",
+      "sources": [
+        {
+          "canonicalUrl": "https://www.mas.gov.sg/regulation",
+          "contentHash": "50b52ba76a56493987f0f59de76abdef5648d4140fa0f4710b98af3cf9030d54",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "mas-regulation",
+          "sourceType": "regulatory_publications"
+        }
+      ],
+      "status": "tracked",
+      "steward": "MAS",
+      "type": "regulator"
+    },
+    {
+      "domains": [
+        "research"
+      ],
+      "id": "research-arxiv",
+      "jurisdiction": "global",
+      "name": "arXiv",
+      "sources": [
+        {
+          "canonicalUrl": "https://export.arxiv.org/api/query?search_query=all%3Aagentic%20AND%20all%3Afinance&max_results=50",
+          "contentHash": "02ad09e3ffbd2bb5cee08856337867f7ba2260bf50c6847d22cad1a1926a2522",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "arxiv-agentic-finance",
+          "sourceType": "research_api"
+        }
+      ],
+      "status": "tracked",
+      "steward": "Cornell University",
+      "type": "research_index"
+    },
+    {
+      "domains": [
+        "research"
+      ],
+      "id": "research-openreview",
+      "jurisdiction": "global",
+      "name": "OpenReview",
+      "sources": [
+        {
+          "canonicalUrl": "https://api2.openreview.net/notes?content.venueid=NeurIPS.cc&limit=1",
+          "contentHash": "84d522b23b2be2fb499d8f73b429e542bf5475ca8313323afdd4a96e2de84bad",
+          "reviewStatus": "unreviewed",
+          "scanStatus": "ok",
+          "sourceId": "openreview-search",
+          "sourceType": "research_api"
+        }
+      ],
+      "status": "tracked",
+      "steward": "OpenReview",
+      "type": "research_index"
+    }
+  ],
+  "publicationState": "published_provisional",
+  "registryVersion": "1.0.0"
+}
