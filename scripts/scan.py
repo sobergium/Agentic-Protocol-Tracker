@@ -5,6 +5,7 @@ import hashlib
 import json
 import os
 import re
+import urllib.error
 import urllib.request
 from typing import Any
 
@@ -12,7 +13,7 @@ from scripts.common import ROOT, content_hash, read_json, utc_now, write_json
 from scripts.validate_registry import validate
 
 MAX_BYTES = 5_000_000
-USER_AGENT = "SystemsOverSignals-EvidenceEngine/0.1 (+https://github.com/sobergium/Agentic-Protocol-Tracker)"
+USER_AGENT = "SystemsOverSignals-EvidenceEngine/0.2 (+https://github.com/sobergium/Agentic-Protocol-Tracker)"
 
 
 def github_api_urls(url: str) -> list[str]:
@@ -23,6 +24,24 @@ def github_api_urls(url: str) -> list[str]:
     repository = repository.removesuffix(".git")
     base = f"https://api.github.com/repos/{owner}/{repository}"
     return [base, f"{base}/releases?per_page=10", f"{base}/tags?per_page=10"]
+
+
+def normalize_content(content: bytes, content_type: str) -> bytes:
+    """Produce a stable representation before hashing upstream evidence."""
+    text = content.decode("utf-8", errors="replace")
+    if "json" in content_type.lower():
+        try:
+            value = json.loads(text)
+            return json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode()
+        except json.JSONDecodeError:
+            pass
+    if "html" in content_type.lower():
+        text = re.sub(r"<!--.*?-->", " ", text, flags=re.DOTALL)
+        text = re.sub(r"<(?:script|style|noscript)\b[^>]*>.*?</(?:script|style|noscript)>", " ", text, flags=re.DOTALL | re.IGNORECASE)
+        text = re.sub(r"\s(?:nonce|integrity|data-build-id)=[\"'][^\"']*[\"']", "", text, flags=re.IGNORECASE)
+        text = re.sub(r"\s+", " ", text).strip()
+        return text.encode()
+    return content
 
 
 def fetch_url(url: str, token: str | None = None) -> tuple[bytes, dict[str, str], int]:
@@ -44,14 +63,25 @@ def observe(source: dict[str, Any], token: str | None = None) -> dict[str, Any]:
     chunks, responses = [], []
     for url in urls:
         content, metadata, status = fetch_url(url, token)
-        chunks.append(content)
+        chunks.append(normalize_content(content, metadata["contentType"]))
         responses.append({"url":url,"status":status,**metadata})
     return {"sourceId":source["id"],"entityId":source["entityId"],"status":"ok","contentHash":content_hash(b"\n--SOURCE-BOUNDARY--\n".join(chunks)),"responses":responses}
 
 
+def restricted_observation(source: dict[str, Any], exc: urllib.error.HTTPError, observed_at: str) -> dict[str, Any]:
+    return {
+        "sourceId": source["id"],
+        "entityId": source["entityId"],
+        "status": "restricted",
+        "observedAt": observed_at,
+        "reason": "primary publisher rejects automated retrieval",
+        "responses": [{"url": source["canonicalUrl"], "status": exc.code}],
+    }
+
+
 def event_for(source: dict[str, Any], old: dict[str, Any] | None, new: dict[str, Any], observed_at: str) -> dict[str, Any]:
     seed = f"{source['id']}:{new['contentHash']}:{observed_at}".encode()
-    return {"eventId":hashlib.sha256(seed).hexdigest()[:24],"sourceId":source["id"],"entityId":source["entityId"],"observedAt":observed_at,"publicationState":"published_provisional","oldHash":old.get("contentHash") if old else None,"newHash":new["contentHash"],"changeType":"baseline_observed" if old is None else "upstream_content_changed","evidence":{"canonicalUrl":source["canonicalUrl"],"authority":source["authority"],"adapter":source["adapter"],"httpResponses":new["responses"]},"reviewStatus":"unreviewed"}
+    return {"eventId":hashlib.sha256(seed).hexdigest()[:24],"sourceId":source["id"],"entityId":source["entityId"],"observedAt":observed_at,"publicationState":"published_provisional","oldHash":old.get("contentHash") if old else None,"newHash":new["contentHash"],"changeType":"baseline_observed" if old is None or not old.get("contentHash") else "upstream_content_changed","evidence":{"canonicalUrl":source["canonicalUrl"],"authority":source["authority"],"adapter":source["adapter"],"httpResponses":new["responses"]},"reviewStatus":"unreviewed"}
 
 
 def append_events(events: list[dict[str, Any]], date: str) -> None:
@@ -75,7 +105,9 @@ def generated_catalog(entities: list[dict[str, Any]], sources: list[dict[str, An
         by_entity.setdefault(source["entityId"], []).append({"sourceId":source["id"],"sourceType":source["sourceType"],"canonicalUrl":source["canonicalUrl"],"scanStatus":observation.get("status","not_scanned") if observation else "not_scanned","reviewStatus":source["reviewStatus"],"contentHash":observation.get("contentHash") if observation else None})
     rows = [{**entity,"sources":by_entity.get(entity["id"],[])} for entity in entities]
     domains = sorted({domain for entity in entities for domain in entity["domains"]})
-    return {"registryVersion":"1.0.0","publicationState":"published_provisional","counts":{"entities":len(entities),"sources":len(sources),"domains":len(domains),"scanned":sum(1 for value in observations.values() if value.get("status")=="ok"),"errors":sum(1 for value in observations.values() if value.get("status")=="error")},"domains":domains,"entities":rows}
+    ok = sum(1 for value in observations.values() if value.get("status")=="ok")
+    restricted = sum(1 for value in observations.values() if value.get("status")=="restricted")
+    return {"registryVersion":"1.0.1","publicationState":"published_provisional","counts":{"entities":len(entities),"sources":len(sources),"domains":len(domains),"scanned":ok,"restricted":restricted,"errors":sum(1 for value in observations.values() if value.get("status")=="error"),"assessed":ok+restricted},"domains":domains,"entities":rows}
 
 
 def run(selected: set[str] | None = None) -> tuple[int, int]:
@@ -88,7 +120,7 @@ def run(selected: set[str] | None = None) -> tuple[int, int]:
     previous = previous_document.get("observations", {})
     observations, events = dict(previous), []
     observed_at, token = utc_now(), os.environ.get("GITHUB_TOKEN")
-    success = failure = 0
+    success = failure = restricted = 0
     for source in sources:
         if selected and source["id"] not in selected:
             continue
@@ -100,17 +132,29 @@ def run(selected: set[str] | None = None) -> tuple[int, int]:
                 new["observedAt"] = observed_at
                 observations[source["id"]] = new
                 events.append(event_for(source, old, new, observed_at))
+        except urllib.error.HTTPError as exc:
+            if exc.code in {401, 403}:
+                restricted += 1
+                new = restricted_observation(source, exc, observed_at)
+                if old is None or old.get("status") != "restricted" or old.get("responses") != new["responses"]:
+                    observations[source["id"]] = new
+                continue
+            failure += 1
+            error = {"sourceId":source["id"],"entityId":source["entityId"],"status":"error","errorType":type(exc).__name__,"error":str(exc)[:500]}
+            if old is None or old.get("status") != "error" or old.get("error") != error["error"]:
+                error["observedAt"] = observed_at
+                observations[source["id"]] = error
         except Exception as exc:
             failure += 1
             error = {"sourceId":source["id"],"entityId":source["entityId"],"status":"error","errorType":type(exc).__name__,"error":str(exc)[:500]}
             if old is None or old.get("status") != "error" or old.get("error") != error["error"]:
                 error["observedAt"] = observed_at
                 observations[source["id"]] = error
-    write_json("data/snapshots/latest.json", {"registryVersion":"1.0.0","observations":observations})
+    write_json("data/snapshots/latest.json", {"registryVersion":"1.0.1","observations":observations})
     append_events(events, observed_at[:10])
     write_json("site/generated/catalog.json", generated_catalog(entities, sources, observations))
     write_json("site/generated/latest-changes.json", {"events":events})
-    print(json.dumps({"successful":success,"failed":failure,"newEvents":len(events)},indent=2))
+    print(json.dumps({"successful":success,"restricted":restricted,"failed":failure,"newEvents":len(events)},indent=2))
     return success, failure
 
 

@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "policy": "canonical-primary-sources-first",
   "sources": [
     {
@@ -183,7 +183,7 @@
       "entityId": "product-mastercard-agent-pay",
       "authority": "canonical",
       "sourceType": "press_room",
-      "canonicalUrl": "https://www.mastercard.com/news/perspectives/2025/mastercard-agent-pay/",
+      "canonicalUrl": "https://www.mastercard.com/us/en/business/artificial-intelligence/mastercard-agent-pay.html",
       "adapter": "http",
       "cadence": "daily",
       "allowedClaims": [
@@ -295,7 +295,7 @@
       "entityId": "standard-iso20022",
       "authority": "canonical",
       "sourceType": "standards_index",
-      "canonicalUrl": "https://www.iso20022.org/",
+      "canonicalUrl": "https://www.iso20022.org/catalogue-message-definitions-change-requests",
       "adapter": "http",
       "cadence": "daily",
       "allowedClaims": [
@@ -407,7 +407,7 @@
       "entityId": "rail-sepa",
       "authority": "canonical",
       "sourceType": "payment_network",
-      "canonicalUrl": "https://www.europeanpaymentscouncil.eu/what-we-do/sepa-payment-schemes",
+      "canonicalUrl": "https://www.europeanpaymentscouncil.eu/what-we-do/epc-payment-scheme-management",
       "adapter": "http",
       "cadence": "daily",
       "allowedClaims": [
@@ -423,7 +423,7 @@
       "entityId": "rail-upi",
       "authority": "canonical",
       "sourceType": "payment_network",
-      "canonicalUrl": "https://www.npci.org.in/what-we-do/upi/product-overview",
+      "canonicalUrl": "https://www.npci.org.in/product/upi",
       "adapter": "http",
       "cadence": "daily",
       "allowedClaims": [
@@ -519,7 +519,7 @@
       "entityId": "provider-openai",
       "authority": "canonical",
       "sourceType": "release_notes",
-      "canonicalUrl": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "canonicalUrl": "https://developers.openai.com/api/docs/changelog",
       "adapter": "http",
       "cadence": "daily",
       "allowedClaims": [
@@ -631,7 +631,7 @@
       "entityId": "provider-mistral",
       "authority": "canonical",
       "sourceType": "release_notes",
-      "canonicalUrl": "https://docs.mistral.ai/resources/changelog/",
+      "canonicalUrl": "https://docs.mistral.ai/resources/changelogs/",
       "adapter": "http",
       "cadence": "daily",
       "allowedClaims": [
@@ -839,7 +839,7 @@
       "entityId": "regulator-bis",
       "authority": "canonical",
       "sourceType": "regulatory_publications",
-      "canonicalUrl": "https://www.bis.org/topic/artificial_intelligence.htm",
+      "canonicalUrl": "https://www.bis.org/topic/fintech/innovation_ai.htm",
       "adapter": "http",
       "cadence": "daily",
       "allowedClaims": [
@@ -871,7 +871,7 @@
       "entityId": "regulator-iosco",
       "authority": "canonical",
       "sourceType": "regulatory_publications",
-      "canonicalUrl": "https://www.iosco.org/library/index.cfm?section=pubdocs",
+      "canonicalUrl": "https://www.iosco.org/publications/?subsection=public_reports",
       "adapter": "http",
       "cadence": "daily",
       "allowedClaims": [
@@ -919,7 +919,7 @@
       "entityId": "regulator-sec",
       "authority": "canonical",
       "sourceType": "regulatory_publications",
-      "canonicalUrl": "https://www.sec.gov/newsroom",
+      "canonicalUrl": "https://www.sec.gov/newsroom/press-releases",
       "adapter": "http",
       "cadence": "daily",
       "allowedClaims": [
@@ -935,7 +935,7 @@
       "entityId": "regulator-ecb",
       "authority": "canonical",
       "sourceType": "regulatory_publications",
-      "canonicalUrl": "https://www.ecb.europa.eu/home/search/html/artificial-intelligence.en.html",
+      "canonicalUrl": "https://www.ecb.europa.eu/press/research-publications/resbull/html/index.en.html",
       "adapter": "http",
       "cadence": "daily",
       "allowedClaims": [
@@ -967,7 +967,7 @@
       "entityId": "regulator-fca",
       "authority": "canonical",
       "sourceType": "regulatory_publications",
-      "canonicalUrl": "https://www.fca.org.uk/firms/innovation/ai",
+      "canonicalUrl": "https://www.fca.org.uk/firms/ai-financial-services",
       "adapter": "http",
       "cadence": "daily",
       "allowedClaims": [
