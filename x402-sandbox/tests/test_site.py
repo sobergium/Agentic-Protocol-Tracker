@@ -36,7 +36,12 @@ class PortfolioSiteTests(unittest.TestCase):
             self.assertTrue((SITE / path).is_file(), path)
 
     def test_navigation_targets_are_present(self):
-        for target in ["explorer","sandbox","evidence","comparison"]:
+        for target in ["tracker","sandbox","evidence","comparison"]:
+            self.assertIn(target, self.parser.ids)
+
+    def test_tracker_uses_generated_primary_source_catalog(self):
+        self.assertIn("generated/catalog.json", self.js)
+        for target in ["tracker-search", "domain-filter", "type-filter", "status-filter", "tracker-results"]:
             self.assertIn(target, self.parser.ids)
 
     def test_runtime_assets_are_local(self):
