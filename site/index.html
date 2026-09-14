@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Systems Over Signals — an evidence-led portfolio exploring payment infrastructure for AI agents.">
+  <title>Systems Over Signals — Agentic Protocol Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="#top" aria-label="Systems Over Signals home">
+      <img src="assets/sos-mark.svg" alt="" width="44" height="50">
+      <span>Systems<br>Over Signals</span>
+    </a>
+    <nav aria-label="Primary">
+      <a href="#explorer">Explorer</a>
+      <a href="#sandbox">Sandbox</a>
+      <a href="#evidence">Evidence</a>
+      <a class="nav-cta" href="https://github.com/sobergium/Agentic-Protocol-Tracker">View source ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">AI × Financial Infrastructure · Build 02</p>
+      <h1>Payment systems are<br><em>coordination systems.</em></h1>
+      <p class="dek">A working exploration of what happens when an AI agent buys an API call—and payment and service do not resolve at the same moment.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#sandbox">Run the sandbox</a>
+        <a class="button quiet" href="#comparison">Compare the models</a>
+      </div>
+      <div class="hero-metrics" aria-label="Project facts">
+        <div><strong>3</strong><span>execution models</span></div>
+        <div><strong>15</strong><span>automated tests</span></div>
+        <div><strong>0</strong><span>runtime dependencies</span></div>
+        <div><strong>v0.1</strong><span>packaged release</span></div>
+      </div>
+    </section>
+
+    <section class="thesis" id="explorer">
+      <div>
+        <p class="section-number">01 / Protocol Explorer</p>
+        <h2>Start with the protocol.<br>Interrogate the boundary.</h2>
+      </div>
+      <div class="thesis-copy">
+        <p>x402 turns HTTP 402 into a machine-readable payment negotiation: challenge, signed payment payload, verification, service, settlement and response.</p>
+        <p>The difficult question is not whether each step works. It is what the system can prove when one succeeds and the next does not.</p>
+        <div class="source-row">
+          <span class="pill verified">Primary sources checked</span>
+          <span class="pill">x402 v2 vocabulary</span>
+          <span class="pill simulated">Simulation disclosed</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="sandbox-section" id="sandbox">
+      <div class="section-heading">
+        <div>
+          <p class="section-number">02 / Paid-API Sandbox</p>
+          <h2>Move the failure boundary.</h2>
+        </div>
+        <p>Choose a payment model, inject a failure, and inspect the resulting evidence trail.</p>
+      </div>
+
+      <div class="lab">
+        <aside class="controls">
+          <fieldset>
+            <legend>01 · Execution model</legend>
+            <div class="segmented" id="flow-picker">
+              <button class="selected" data-flow="authorization">Authorization</button>
+              <button data-flow="upfront">Upfront</button>
+              <button data-flow="escrow">Escrow</button>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>02 · Scenario</legend>
+            <label><input type="radio" name="scenario" value="normal" checked><span>Normal completion</span></label>
+            <label><input type="radio" name="scenario" value="replay"><span>Replay attempt</span></label>
+            <label><input type="radio" name="scenario" value="settlement"><span>Settlement fails</span></label>
+            <label><input type="radio" name="scenario" value="finality"><span>Finality exceeds timeout</span></label>
+          </fieldset>
+          <button class="run-button" id="run">Run transaction <span>→</span></button>
+          <p class="simulation-note"><strong>Simulation</strong> — no wallet, token or blockchain is used in this browser demonstration.</p>
+        </aside>
+
+        <div class="stage">
+          <div class="stage-topline">
+            <span id="flow-label">Authorization-first</span>
+            <span class="live-dot"><i></i> transaction harness</span>
+          </div>
+          <div class="actors" aria-hidden="true">
+            <span>Payer</span><span>Resource server</span><span>Facilitator</span>
+          </div>
+          <div class="timeline" id="timeline" aria-live="polite"></div>
+          <div class="outcome" id="outcome">
+            <span class="outcome-label">Ready</span>
+            <strong>Select a scenario and run the transaction.</strong>
+            <p>The state machine will expose the exact point where payment and service diverge.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="evidence-section" id="evidence">
+      <div class="section-heading">
+        <div>
+          <p class="section-number">03 / Governance evidence</p>
+          <h2>The audit trail is part<br>of the product.</h2>
+        </div>
+        <p>Every transition records sequence, prior state, next state and decision evidence. The Python harness persists the same structure as append-only JSONL.</p>
+      </div>
+      <div class="evidence-card">
+        <div class="evidence-toolbar">
+          <span><i></i> Evidence stream</span>
+          <button id="copy-log">Copy JSON</button>
+        </div>
+        <div class="log-head"><span>Seq</span><span>State transition</span><span>Evidence</span></div>
+        <div id="log" class="log-body"><p class="empty-log">Run a transaction to generate evidence.</p></div>
+      </div>
+    </section>
+
+    <section class="comparison" id="comparison">
+      <p class="section-number">04 / Atomicity comparison</p>
+      <h2>There is no free atomicity.</h2>
+      <p class="comparison-intro">Each model protects a different participant. None makes an arbitrary service and an external ledger a single atomic operation.</p>
+      <div class="model-grid">
+        <article>
+          <span class="model-index">A</span>
+          <h3>Authorization-first</h3>
+          <p class="order">Verify → Serve → Settle</p>
+          <p>Fast fulfillment. The merchant carries collection risk when service succeeds but settlement fails.</p>
+          <span class="risk">Risk owner · Merchant</span>
+        </article>
+        <article>
+          <span class="model-index">B</span>
+          <h3>Upfront</h3>
+          <p class="order">Verify → Settle → Serve</p>
+          <p>Collection certainty. The payer needs refund and remediation when service later fails.</p>
+          <span class="risk">Risk owner · Payer</span>
+        </article>
+        <article>
+          <span class="model-index">C</span>
+          <h3>Escrow</h3>
+          <p class="order">Lock → Serve → Release</p>
+          <p>Narrows exposure, but introduces locked funds, release authority and dispute states.</p>
+          <span class="risk">Risk owner · Shared</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="boundary">
+      <div>
+        <p class="section-number">Implementation boundary</p>
+        <h2>Protocol-informed.<br>Deliberately simulated.</h2>
+      </div>
+      <div class="boundary-grid">
+        <div><span>Implemented</span><p>HTTP 402 challenge/retry shape, x402-style headers, explicit states, replay reservation and durable evidence.</p></div>
+        <div><span>Simulated</span><p>HMAC payer proof, facilitator, ledger, addresses, token transfer, settlement and finality.</p></div>
+        <div><span>Next genuine layer</span><p>A testnet wallet, production SDK wire objects and facilitator integration after the model is reviewed.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#top">
+      <img src="assets/sos-mark.svg" alt="" width="36" height="42">
+      <span>Systems Over Signals</span>
+    </a>
+    <p>Built as evidence, not theatre.</p>
+    <div><a href="https://github.com/sobergium/Agentic-Protocol-Tracker">GitHub</a><a href="https://github.com/sobergium/Agentic-Protocol-Tracker/releases/tag/x402-sandbox-v0.1.0">Release</a></div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
