@@ -23,7 +23,7 @@ jobs:
       - run: python -m x402_sandbox.demo --flow upfront
       - run: python -m x402_sandbox.demo --flow escrow
 
-  release:
+  release-x402:
     if: github.ref == 'refs/heads/main' && github.event.head_commit.message == 'Package x402 sandbox release'
     needs: sandbox
     runs-on: ubuntu-latest
@@ -40,3 +40,21 @@ jobs:
           --target "$GITHUB_SHA"
           --title "x402 Paid-API Sandbox v0.1.0"
           --notes-file RELEASE_NOTES.md
+
+  release-interface:
+    if: github.ref == 'refs/heads/main' && github.event.head_commit.message == 'Package portfolio interface release'
+    needs: sandbox
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build interface archive
+        run: git archive --format=zip --output=portfolio-interface-v0.1.0.zip HEAD:site
+      - name: Publish tagged interface release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >
+          gh release create portfolio-interface-v0.1.0
+          portfolio-interface-v0.1.0.zip
+          --target "$GITHUB_SHA"
+          --title "Systems Over Signals — Portfolio Interface v0.1.0"
+          --notes "Responsive, dependency-free presentation layer with interactive payment-flow states, failure injection, evidence viewer and atomicity comparison. Built around the Systems Over Signals ivory, ink and teal identity."
