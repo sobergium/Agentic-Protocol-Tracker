@@ -1,0 +1,20 @@
+{
+  "corpusVersion": "0.2",
+  "checkedAt": "2026-09-14",
+  "protocol": "x402",
+  "modeledVersion": 2,
+  "primarySources": [
+    "https://docs.x402.org/core-concepts/http-402",
+    "https://docs.x402.org/core-concepts/client-server",
+    "https://docs.x402.org/core-concepts/facilitator",
+    "https://docs.x402.org/getting-started/quickstart-for-sellers",
+    "https://github.com/coinbase/x402"
+  ],
+  "claims": [
+    {"id":"x402-001","claim":"An unpaid protected request receives HTTP 402 with payment requirements.","status":"protocol-informed"},
+    {"id":"x402-002","claim":"A client retries with a payment signature payload.","status":"protocol-informed"},
+    {"id":"x402-003","claim":"Verification and settlement may be delegated to a facilitator.","status":"protocol-informed"},
+    {"id":"x402-004","claim":"Settlement pending is non-terminal when confirmation is indeterminate.","status":"protocol-informed"},
+    {"id":"sandbox-001","claim":"HMAC proofs and all ledger effects in this repository are simulated.","status":"simulation"}
+  ]
+}

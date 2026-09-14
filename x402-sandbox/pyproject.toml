@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "x402-paid-api-sandbox"
+version = "0.1.0"
+description = "Zero-runtime-dependency sandbox for paid API failure boundaries"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.setuptools]
+packages = ["x402_sandbox"]
