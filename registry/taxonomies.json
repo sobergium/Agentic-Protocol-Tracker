@@ -1,0 +1,81 @@
+{
+  "version": "1.0.0",
+  "entityTypes": [
+    "protocol",
+    "standard",
+    "model_provider",
+    "model_family",
+    "agent_runtime",
+    "payment_rail",
+    "infrastructure_provider",
+    "financial_institution",
+    "regulator",
+    "standards_body",
+    "research_index"
+  ],
+  "domains": [
+    "agent_interoperability",
+    "agentic_commerce",
+    "agentic_payments",
+    "identity_authorization",
+    "transaction_infrastructure",
+    "blockchain_payments",
+    "foundation_models",
+    "agent_runtimes",
+    "financial_services",
+    "regulation",
+    "research"
+  ],
+  "sourceRoles": [
+    "canonical",
+    "implementation",
+    "discovery"
+  ],
+  "sourceTypes": [
+    "specification",
+    "github_repository",
+    "documentation",
+    "release_notes",
+    "model_catalog",
+    "standards_index",
+    "regulatory_publications",
+    "payment_network",
+    "research_api",
+    "press_room"
+  ],
+  "adapters": [
+    "http",
+    "github",
+    "rss",
+    "sitemap",
+    "openapi",
+    "json_schema",
+    "model_card",
+    "pdf_index",
+    "research_api",
+    "onchain_registry"
+  ],
+  "reviewStatuses": [
+    "unreviewed",
+    "reviewed",
+    "corrected",
+    "rejected",
+    "superseded"
+  ],
+  "publicationStates": [
+    "observed",
+    "normalized",
+    "validated",
+    "published_provisional",
+    "reviewed",
+    "corrected",
+    "rejected",
+    "superseded"
+  ],
+  "cadences": [
+    "twice_daily",
+    "daily",
+    "weekly",
+    "monthly"
+  ]
+}

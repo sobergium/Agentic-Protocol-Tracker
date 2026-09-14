@@ -1,0 +1,36 @@
+name: weekly evidence review
+
+on:
+  schedule:
+    - cron: "23 18 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: weekly-evidence-review
+  cancel-in-progress: false
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Build post-publication review queue
+        run: python -m scripts.create_review > weekly-review.md
+      - name: Create review issue if absent
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="Weekly evidence review $(date -u +%G-W%V)"
+          COUNT="$(gh issue list --state all --search "$TITLE in:title" --json title --jq 'length')"
+          if [ "$COUNT" = "0" ]; then
+            gh issue create --title "$TITLE" --body-file weekly-review.md
+          else
+            echo "Review issue already exists: $TITLE"
+          fi

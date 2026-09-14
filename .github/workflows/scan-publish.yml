@@ -1,0 +1,60 @@
+name: scan and publish
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "registry/**"
+      - "schemas/**"
+      - "scripts/**"
+      - ".github/workflows/scan-publish.yml"
+  schedule:
+    - cron: "17 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: evidence-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate universal registry
+        run: python -m scripts.validate_registry
+      - name: Scan canonical sources
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python -m scripts.scan
+      - name: Run complete test suite
+        env:
+          PYTHONPATH: x402-sandbox
+        run: python -m unittest discover -s x402-sandbox/tests -v
+      - name: Commit evidence updates
+        id: commit
+        run: |
+          git add data site/generated
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "systems-over-signals[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update evidence from canonical source scan"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Deploy updated generated views
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main

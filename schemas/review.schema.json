@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Systems Over Signals Review",
+  "type": "object",
+  "required": [
+    "reviewId",
+    "periodStart",
+    "periodEnd",
+    "reviewer",
+    "dispositions"
+  ],
+  "properties": {
+    "reviewId": {
+      "type": "string"
+    },
+    "periodStart": {
+      "type": "string"
+    },
+    "periodEnd": {
+      "type": "string"
+    },
+    "reviewer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dispositions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

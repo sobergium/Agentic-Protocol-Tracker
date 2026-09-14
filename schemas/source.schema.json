@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Systems Over Signals Source",
+  "type": "object",
+  "required": [
+    "id",
+    "entityId",
+    "authority",
+    "sourceType",
+    "canonicalUrl",
+    "adapter",
+    "cadence",
+    "allowedClaims",
+    "reviewStatus",
+    "enabled"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "entityId": {
+      "type": "string"
+    },
+    "authority": {
+      "type": "string"
+    },
+    "sourceType": {
+      "type": "string"
+    },
+    "canonicalUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "adapter": {
+      "type": "string"
+    },
+    "cadence": {
+      "type": "string"
+    },
+    "allowedClaims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "reviewStatus": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    }
+  }
+}

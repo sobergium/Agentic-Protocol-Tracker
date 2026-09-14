@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Systems Over Signals Entity",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "type",
+    "domains",
+    "steward",
+    "jurisdiction",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "domains": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "steward": {
+      "type": "string"
+    },
+    "jurisdiction": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

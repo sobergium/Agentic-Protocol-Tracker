@@ -1,0 +1,687 @@
+{
+  "version": "1.0.0",
+  "generatedAt": null,
+  "entities": [
+    {
+      "id": "protocol-mcp",
+      "name": "Model Context Protocol",
+      "type": "protocol",
+      "domains": [
+        "agent_interoperability"
+      ],
+      "steward": "Linux Foundation / AAIF",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "protocol-a2a",
+      "name": "Agent2Agent Protocol",
+      "type": "protocol",
+      "domains": [
+        "agent_interoperability"
+      ],
+      "steward": "Linux Foundation / A2A Project",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "protocol-ag-ui",
+      "name": "Agent-User Interaction Protocol",
+      "type": "protocol",
+      "domains": [
+        "agent_interoperability"
+      ],
+      "steward": "AG-UI",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "protocol-anp",
+      "name": "Agent Network Protocol",
+      "type": "protocol",
+      "domains": [
+        "agent_interoperability"
+      ],
+      "steward": "ANP Community",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "protocol-acp-commerce",
+      "name": "Agentic Commerce Protocol",
+      "type": "protocol",
+      "domains": [
+        "agentic_commerce"
+      ],
+      "steward": "OpenAI and Stripe",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "protocol-ucp",
+      "name": "Universal Commerce Protocol",
+      "type": "protocol",
+      "domains": [
+        "agentic_commerce"
+      ],
+      "steward": "Google and Shopify",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "protocol-ap2",
+      "name": "Agent Payments Protocol",
+      "type": "protocol",
+      "domains": [
+        "agentic_commerce",
+        "agentic_payments"
+      ],
+      "steward": "Google",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "protocol-x402",
+      "name": "x402",
+      "type": "protocol",
+      "domains": [
+        "agentic_payments"
+      ],
+      "steward": "x402 Foundation / Coinbase",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "protocol-visa-tap",
+      "name": "Visa Trusted Agent Protocol",
+      "type": "protocol",
+      "domains": [
+        "agentic_payments",
+        "identity_authorization"
+      ],
+      "steward": "Visa",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "product-mastercard-agent-pay",
+      "name": "Mastercard Agent Pay",
+      "type": "infrastructure_provider",
+      "domains": [
+        "agentic_payments"
+      ],
+      "steward": "Mastercard",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "standard-oauth",
+      "name": "OAuth",
+      "type": "standard",
+      "domains": [
+        "identity_authorization"
+      ],
+      "steward": "IETF",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "standard-fapi",
+      "name": "Financial-grade API",
+      "type": "standard",
+      "domains": [
+        "identity_authorization",
+        "financial_services"
+      ],
+      "steward": "OpenID Foundation",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "standard-did",
+      "name": "Decentralized Identifiers",
+      "type": "standard",
+      "domains": [
+        "identity_authorization"
+      ],
+      "steward": "W3C",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "standard-vc",
+      "name": "Verifiable Credentials",
+      "type": "standard",
+      "domains": [
+        "identity_authorization"
+      ],
+      "steward": "W3C",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "standard-fido",
+      "name": "FIDO and WebAuthn",
+      "type": "standard",
+      "domains": [
+        "identity_authorization"
+      ],
+      "steward": "FIDO Alliance / W3C",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "standard-erc4337",
+      "name": "ERC-4337 Account Abstraction",
+      "type": "standard",
+      "domains": [
+        "blockchain_payments"
+      ],
+      "steward": "Ethereum Community",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "standard-iso20022",
+      "name": "ISO 20022",
+      "type": "standard",
+      "domains": [
+        "transaction_infrastructure"
+      ],
+      "steward": "ISO",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "standard-emvco",
+      "name": "EMV Specifications",
+      "type": "standard",
+      "domains": [
+        "transaction_infrastructure"
+      ],
+      "steward": "EMVCo",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "standard-pci",
+      "name": "PCI Security Standards",
+      "type": "standard",
+      "domains": [
+        "transaction_infrastructure"
+      ],
+      "steward": "PCI SSC",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "standard-web-payments",
+      "name": "W3C Web Payments",
+      "type": "standard",
+      "domains": [
+        "transaction_infrastructure"
+      ],
+      "steward": "W3C",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "rail-swift",
+      "name": "SWIFT",
+      "type": "payment_rail",
+      "domains": [
+        "transaction_infrastructure"
+      ],
+      "steward": "SWIFT",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "rail-fednow",
+      "name": "FedNow Service",
+      "type": "payment_rail",
+      "domains": [
+        "transaction_infrastructure"
+      ],
+      "steward": "Federal Reserve",
+      "jurisdiction": "US",
+      "status": "tracked"
+    },
+    {
+      "id": "rail-rtp",
+      "name": "RTP Network",
+      "type": "payment_rail",
+      "domains": [
+        "transaction_infrastructure"
+      ],
+      "steward": "The Clearing House",
+      "jurisdiction": "US",
+      "status": "tracked"
+    },
+    {
+      "id": "rail-sepa",
+      "name": "SEPA",
+      "type": "payment_rail",
+      "domains": [
+        "transaction_infrastructure"
+      ],
+      "steward": "European Payments Council",
+      "jurisdiction": "EU",
+      "status": "tracked"
+    },
+    {
+      "id": "rail-upi",
+      "name": "Unified Payments Interface",
+      "type": "payment_rail",
+      "domains": [
+        "transaction_infrastructure"
+      ],
+      "steward": "NPCI",
+      "jurisdiction": "India",
+      "status": "tracked"
+    },
+    {
+      "id": "rail-pix",
+      "name": "Pix",
+      "type": "payment_rail",
+      "domains": [
+        "transaction_infrastructure"
+      ],
+      "steward": "Banco Central do Brasil",
+      "jurisdiction": "Brazil",
+      "status": "tracked"
+    },
+    {
+      "id": "chain-ethereum",
+      "name": "Ethereum",
+      "type": "infrastructure_provider",
+      "domains": [
+        "blockchain_payments"
+      ],
+      "steward": "Ethereum Foundation",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "chain-solana",
+      "name": "Solana",
+      "type": "infrastructure_provider",
+      "domains": [
+        "blockchain_payments"
+      ],
+      "steward": "Solana Foundation",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "issuer-circle",
+      "name": "Circle / USDC",
+      "type": "infrastructure_provider",
+      "domains": [
+        "blockchain_payments",
+        "financial_services"
+      ],
+      "steward": "Circle",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "provider-openai",
+      "name": "OpenAI",
+      "type": "model_provider",
+      "domains": [
+        "foundation_models",
+        "agent_runtimes"
+      ],
+      "steward": "OpenAI",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "provider-anthropic",
+      "name": "Anthropic",
+      "type": "model_provider",
+      "domains": [
+        "foundation_models",
+        "agent_runtimes"
+      ],
+      "steward": "Anthropic",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "provider-google",
+      "name": "Google Gemini",
+      "type": "model_provider",
+      "domains": [
+        "foundation_models",
+        "agent_runtimes"
+      ],
+      "steward": "Google",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "provider-meta",
+      "name": "Meta Llama",
+      "type": "model_provider",
+      "domains": [
+        "foundation_models"
+      ],
+      "steward": "Meta",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "provider-mistral",
+      "name": "Mistral AI",
+      "type": "model_provider",
+      "domains": [
+        "foundation_models"
+      ],
+      "steward": "Mistral AI",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "provider-cohere",
+      "name": "Cohere",
+      "type": "model_provider",
+      "domains": [
+        "foundation_models"
+      ],
+      "steward": "Cohere",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "provider-xai",
+      "name": "xAI",
+      "type": "model_provider",
+      "domains": [
+        "foundation_models"
+      ],
+      "steward": "xAI",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "platform-bedrock",
+      "name": "Amazon Bedrock",
+      "type": "infrastructure_provider",
+      "domains": [
+        "foundation_models",
+        "agent_runtimes"
+      ],
+      "steward": "AWS",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "platform-azure-ai",
+      "name": "Azure AI Foundry",
+      "type": "infrastructure_provider",
+      "domains": [
+        "foundation_models",
+        "agent_runtimes"
+      ],
+      "steward": "Microsoft",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "runtime-openai-agents",
+      "name": "OpenAI Agents SDK",
+      "type": "agent_runtime",
+      "domains": [
+        "agent_runtimes"
+      ],
+      "steward": "OpenAI",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "runtime-google-adk",
+      "name": "Google Agent Development Kit",
+      "type": "agent_runtime",
+      "domains": [
+        "agent_runtimes"
+      ],
+      "steward": "Google",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "runtime-autogen",
+      "name": "Microsoft AutoGen",
+      "type": "agent_runtime",
+      "domains": [
+        "agent_runtimes"
+      ],
+      "steward": "Microsoft",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "runtime-semantic-kernel",
+      "name": "Semantic Kernel",
+      "type": "agent_runtime",
+      "domains": [
+        "agent_runtimes"
+      ],
+      "steward": "Microsoft",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "runtime-langgraph",
+      "name": "LangGraph",
+      "type": "agent_runtime",
+      "domains": [
+        "agent_runtimes"
+      ],
+      "steward": "LangChain",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "runtime-crewai",
+      "name": "CrewAI",
+      "type": "agent_runtime",
+      "domains": [
+        "agent_runtimes"
+      ],
+      "steward": "CrewAI",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "runtime-pydantic-ai",
+      "name": "PydanticAI",
+      "type": "agent_runtime",
+      "domains": [
+        "agent_runtimes"
+      ],
+      "steward": "Pydantic",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "runtime-llamaindex",
+      "name": "LlamaIndex",
+      "type": "agent_runtime",
+      "domains": [
+        "agent_runtimes"
+      ],
+      "steward": "LlamaIndex",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "regulator-bis",
+      "name": "Bank for International Settlements",
+      "type": "standards_body",
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "steward": "BIS",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "regulator-fsb",
+      "name": "Financial Stability Board",
+      "type": "standards_body",
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "steward": "FSB",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "regulator-iosco",
+      "name": "IOSCO",
+      "type": "standards_body",
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "steward": "IOSCO",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "regulator-fatf",
+      "name": "Financial Action Task Force",
+      "type": "standards_body",
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "steward": "FATF",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "regulator-fed",
+      "name": "Federal Reserve",
+      "type": "regulator",
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "steward": "Federal Reserve",
+      "jurisdiction": "US",
+      "status": "tracked"
+    },
+    {
+      "id": "regulator-sec",
+      "name": "US Securities and Exchange Commission",
+      "type": "regulator",
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "steward": "SEC",
+      "jurisdiction": "US",
+      "status": "tracked"
+    },
+    {
+      "id": "regulator-ecb",
+      "name": "European Central Bank",
+      "type": "regulator",
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "steward": "ECB",
+      "jurisdiction": "EU",
+      "status": "tracked"
+    },
+    {
+      "id": "regulator-eba",
+      "name": "European Banking Authority",
+      "type": "regulator",
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "steward": "EBA",
+      "jurisdiction": "EU",
+      "status": "tracked"
+    },
+    {
+      "id": "regulator-fca",
+      "name": "Financial Conduct Authority",
+      "type": "regulator",
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "steward": "FCA",
+      "jurisdiction": "UK",
+      "status": "tracked"
+    },
+    {
+      "id": "regulator-rbi",
+      "name": "Reserve Bank of India",
+      "type": "regulator",
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "steward": "RBI",
+      "jurisdiction": "India",
+      "status": "tracked"
+    },
+    {
+      "id": "regulator-sebi",
+      "name": "Securities and Exchange Board of India",
+      "type": "regulator",
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "steward": "SEBI",
+      "jurisdiction": "India",
+      "status": "tracked"
+    },
+    {
+      "id": "regulator-mas",
+      "name": "Monetary Authority of Singapore",
+      "type": "regulator",
+      "domains": [
+        "financial_services",
+        "regulation"
+      ],
+      "steward": "MAS",
+      "jurisdiction": "Singapore",
+      "status": "tracked"
+    },
+    {
+      "id": "research-arxiv",
+      "name": "arXiv",
+      "type": "research_index",
+      "domains": [
+        "research"
+      ],
+      "steward": "Cornell University",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
+      "id": "research-openreview",
+      "name": "OpenReview",
+      "type": "research_index",
+      "domains": [
+        "research"
+      ],
+      "steward": "OpenReview",
+      "jurisdiction": "global",
+      "status": "tracked"
+    }
+  ]
+}

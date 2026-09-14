@@ -1,0 +1,1062 @@
+{
+  "version": "1.0.0",
+  "policy": "canonical-primary-sources-first",
+  "sources": [
+    {
+      "id": "mcp-spec",
+      "entityId": "protocol-mcp",
+      "authority": "canonical",
+      "sourceType": "specification",
+      "canonicalUrl": "https://modelcontextprotocol.io/specification/latest",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "mcp-repo",
+      "entityId": "protocol-mcp",
+      "authority": "canonical",
+      "sourceType": "github_repository",
+      "canonicalUrl": "https://github.com/modelcontextprotocol/modelcontextprotocol",
+      "adapter": "github",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "a2a-repo",
+      "entityId": "protocol-a2a",
+      "authority": "canonical",
+      "sourceType": "github_repository",
+      "canonicalUrl": "https://github.com/a2aproject/A2A",
+      "adapter": "github",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "ag-ui-repo",
+      "entityId": "protocol-ag-ui",
+      "authority": "canonical",
+      "sourceType": "github_repository",
+      "canonicalUrl": "https://github.com/ag-ui-protocol/ag-ui",
+      "adapter": "github",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "anp-repo",
+      "entityId": "protocol-anp",
+      "authority": "canonical",
+      "sourceType": "github_repository",
+      "canonicalUrl": "https://github.com/agent-network-protocol/AgentNetworkProtocol",
+      "adapter": "github",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "acp-commerce-spec",
+      "entityId": "protocol-acp-commerce",
+      "authority": "canonical",
+      "sourceType": "specification",
+      "canonicalUrl": "https://www.agenticcommerce.dev/",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "ucp-spec",
+      "entityId": "protocol-ucp",
+      "authority": "canonical",
+      "sourceType": "specification",
+      "canonicalUrl": "https://ucp.dev/",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "ap2-repo",
+      "entityId": "protocol-ap2",
+      "authority": "canonical",
+      "sourceType": "github_repository",
+      "canonicalUrl": "https://github.com/google-agentic-commerce/AP2",
+      "adapter": "github",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "x402-docs",
+      "entityId": "protocol-x402",
+      "authority": "canonical",
+      "sourceType": "documentation",
+      "canonicalUrl": "https://docs.x402.org/",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "x402-repo",
+      "entityId": "protocol-x402",
+      "authority": "canonical",
+      "sourceType": "github_repository",
+      "canonicalUrl": "https://github.com/coinbase/x402",
+      "adapter": "github",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "visa-tap",
+      "entityId": "protocol-visa-tap",
+      "authority": "canonical",
+      "sourceType": "documentation",
+      "canonicalUrl": "https://developer.visa.com/capabilities/trusted-agent-protocol",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "mastercard-agent-pay",
+      "entityId": "product-mastercard-agent-pay",
+      "authority": "canonical",
+      "sourceType": "press_room",
+      "canonicalUrl": "https://www.mastercard.com/news/perspectives/2025/mastercard-agent-pay/",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "availability",
+        "partnership",
+        "implementation"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "ietf-oauth-documents",
+      "entityId": "standard-oauth",
+      "authority": "canonical",
+      "sourceType": "standards_index",
+      "canonicalUrl": "https://datatracker.ietf.org/wg/oauth/documents/",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "openid-fapi",
+      "entityId": "standard-fapi",
+      "authority": "canonical",
+      "sourceType": "standards_index",
+      "canonicalUrl": "https://openid.net/wg/fapi/specifications/",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "w3c-did",
+      "entityId": "standard-did",
+      "authority": "canonical",
+      "sourceType": "specification",
+      "canonicalUrl": "https://www.w3.org/TR/did-core/",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "w3c-vc",
+      "entityId": "standard-vc",
+      "authority": "canonical",
+      "sourceType": "specification",
+      "canonicalUrl": "https://www.w3.org/TR/vc-data-model-2.0/",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "fido-specifications",
+      "entityId": "standard-fido",
+      "authority": "canonical",
+      "sourceType": "standards_index",
+      "canonicalUrl": "https://fidoalliance.org/specifications/",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "erc4337",
+      "entityId": "standard-erc4337",
+      "authority": "canonical",
+      "sourceType": "specification",
+      "canonicalUrl": "https://eips.ethereum.org/EIPS/eip-4337",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "iso20022",
+      "entityId": "standard-iso20022",
+      "authority": "canonical",
+      "sourceType": "standards_index",
+      "canonicalUrl": "https://www.iso20022.org/",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "emvco-specifications",
+      "entityId": "standard-emvco",
+      "authority": "canonical",
+      "sourceType": "standards_index",
+      "canonicalUrl": "https://www.emvco.com/emv-technologies/",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "pci-standards",
+      "entityId": "standard-pci",
+      "authority": "canonical",
+      "sourceType": "standards_index",
+      "canonicalUrl": "https://www.pcisecuritystandards.org/standards/",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "w3c-webpayments",
+      "entityId": "standard-web-payments",
+      "authority": "canonical",
+      "sourceType": "specification",
+      "canonicalUrl": "https://www.w3.org/TR/payment-request/",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "swift-iso20022",
+      "entityId": "rail-swift",
+      "authority": "canonical",
+      "sourceType": "documentation",
+      "canonicalUrl": "https://www.swift.com/standards/iso-20022",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "fednow",
+      "entityId": "rail-fednow",
+      "authority": "canonical",
+      "sourceType": "payment_network",
+      "canonicalUrl": "https://www.frbservices.org/financial-services/fednow",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "tch-rtp",
+      "entityId": "rail-rtp",
+      "authority": "canonical",
+      "sourceType": "payment_network",
+      "canonicalUrl": "https://www.theclearinghouse.org/payment-systems/rtp",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "epc-sepa",
+      "entityId": "rail-sepa",
+      "authority": "canonical",
+      "sourceType": "payment_network",
+      "canonicalUrl": "https://www.europeanpaymentscouncil.eu/what-we-do/sepa-payment-schemes",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "npci-upi",
+      "entityId": "rail-upi",
+      "authority": "canonical",
+      "sourceType": "payment_network",
+      "canonicalUrl": "https://www.npci.org.in/what-we-do/upi/product-overview",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "bcb-pix",
+      "entityId": "rail-pix",
+      "authority": "canonical",
+      "sourceType": "payment_network",
+      "canonicalUrl": "https://www.bcb.gov.br/en/financialstability/pix_en",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "ethereum-specs",
+      "entityId": "chain-ethereum",
+      "authority": "canonical",
+      "sourceType": "github_repository",
+      "canonicalUrl": "https://github.com/ethereum/consensus-specs",
+      "adapter": "github",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "solana-docs",
+      "entityId": "chain-solana",
+      "authority": "canonical",
+      "sourceType": "documentation",
+      "canonicalUrl": "https://solana.com/docs",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "circle-usdc",
+      "entityId": "issuer-circle",
+      "authority": "canonical",
+      "sourceType": "documentation",
+      "canonicalUrl": "https://developers.circle.com/stablecoins/",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "openai-models",
+      "entityId": "provider-openai",
+      "authority": "canonical",
+      "sourceType": "model_catalog",
+      "canonicalUrl": "https://platform.openai.com/docs/models",
+      "adapter": "model_card",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "openai-release-notes",
+      "entityId": "provider-openai",
+      "authority": "canonical",
+      "sourceType": "release_notes",
+      "canonicalUrl": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "anthropic-models",
+      "entityId": "provider-anthropic",
+      "authority": "canonical",
+      "sourceType": "model_catalog",
+      "canonicalUrl": "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "adapter": "model_card",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "anthropic-release-notes",
+      "entityId": "provider-anthropic",
+      "authority": "canonical",
+      "sourceType": "release_notes",
+      "canonicalUrl": "https://docs.anthropic.com/en/release-notes/overview",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "google-models",
+      "entityId": "provider-google",
+      "authority": "canonical",
+      "sourceType": "model_catalog",
+      "canonicalUrl": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models",
+      "adapter": "model_card",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "google-release-notes",
+      "entityId": "provider-google",
+      "authority": "canonical",
+      "sourceType": "release_notes",
+      "canonicalUrl": "https://cloud.google.com/vertex-ai/generative-ai/docs/release-notes",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "meta-llama",
+      "entityId": "provider-meta",
+      "authority": "canonical",
+      "sourceType": "github_repository",
+      "canonicalUrl": "https://github.com/meta-llama/llama-models",
+      "adapter": "github",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "mistral-models",
+      "entityId": "provider-mistral",
+      "authority": "canonical",
+      "sourceType": "model_catalog",
+      "canonicalUrl": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "adapter": "model_card",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "mistral-changelog",
+      "entityId": "provider-mistral",
+      "authority": "canonical",
+      "sourceType": "release_notes",
+      "canonicalUrl": "https://docs.mistral.ai/resources/changelog/",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "cohere-models",
+      "entityId": "provider-cohere",
+      "authority": "canonical",
+      "sourceType": "model_catalog",
+      "canonicalUrl": "https://docs.cohere.com/docs/models",
+      "adapter": "model_card",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "xai-models",
+      "entityId": "provider-xai",
+      "authority": "canonical",
+      "sourceType": "model_catalog",
+      "canonicalUrl": "https://docs.x.ai/docs/models",
+      "adapter": "model_card",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "bedrock-models",
+      "entityId": "platform-bedrock",
+      "authority": "canonical",
+      "sourceType": "model_catalog",
+      "canonicalUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "adapter": "model_card",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "azure-model-catalog",
+      "entityId": "platform-azure-ai",
+      "authority": "canonical",
+      "sourceType": "model_catalog",
+      "canonicalUrl": "https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/foundry-models-overview",
+      "adapter": "model_card",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "openai-agents-repo",
+      "entityId": "runtime-openai-agents",
+      "authority": "canonical",
+      "sourceType": "github_repository",
+      "canonicalUrl": "https://github.com/openai/openai-agents-python",
+      "adapter": "github",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "google-adk-repo",
+      "entityId": "runtime-google-adk",
+      "authority": "canonical",
+      "sourceType": "github_repository",
+      "canonicalUrl": "https://github.com/google/adk-python",
+      "adapter": "github",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "autogen-repo",
+      "entityId": "runtime-autogen",
+      "authority": "canonical",
+      "sourceType": "github_repository",
+      "canonicalUrl": "https://github.com/microsoft/autogen",
+      "adapter": "github",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "semantic-kernel-repo",
+      "entityId": "runtime-semantic-kernel",
+      "authority": "canonical",
+      "sourceType": "github_repository",
+      "canonicalUrl": "https://github.com/microsoft/semantic-kernel",
+      "adapter": "github",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "langgraph-repo",
+      "entityId": "runtime-langgraph",
+      "authority": "canonical",
+      "sourceType": "github_repository",
+      "canonicalUrl": "https://github.com/langchain-ai/langgraph",
+      "adapter": "github",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "crewai-repo",
+      "entityId": "runtime-crewai",
+      "authority": "canonical",
+      "sourceType": "github_repository",
+      "canonicalUrl": "https://github.com/crewAIInc/crewAI",
+      "adapter": "github",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "pydantic-ai-repo",
+      "entityId": "runtime-pydantic-ai",
+      "authority": "canonical",
+      "sourceType": "github_repository",
+      "canonicalUrl": "https://github.com/pydantic/pydantic-ai",
+      "adapter": "github",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "llamaindex-repo",
+      "entityId": "runtime-llamaindex",
+      "authority": "canonical",
+      "sourceType": "github_repository",
+      "canonicalUrl": "https://github.com/run-llama/llama_index",
+      "adapter": "github",
+      "cadence": "daily",
+      "allowedClaims": [
+        "version",
+        "change",
+        "availability"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "bis-ai",
+      "entityId": "regulator-bis",
+      "authority": "canonical",
+      "sourceType": "regulatory_publications",
+      "canonicalUrl": "https://www.bis.org/topic/artificial_intelligence.htm",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "publication",
+        "policy",
+        "risk"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "fsb-publications",
+      "entityId": "regulator-fsb",
+      "authority": "canonical",
+      "sourceType": "regulatory_publications",
+      "canonicalUrl": "https://www.fsb.org/work-of-the-fsb/financial-innovation-and-structural-change/artificial-intelligence-and-machine-learning/",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "publication",
+        "policy",
+        "risk"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "iosco-publications",
+      "entityId": "regulator-iosco",
+      "authority": "canonical",
+      "sourceType": "regulatory_publications",
+      "canonicalUrl": "https://www.iosco.org/library/index.cfm?section=pubdocs",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "publication",
+        "policy",
+        "risk"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "fatf-publications",
+      "entityId": "regulator-fatf",
+      "authority": "canonical",
+      "sourceType": "regulatory_publications",
+      "canonicalUrl": "https://www.fatf-gafi.org/en/publications.html",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "publication",
+        "policy",
+        "risk"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "fed-innovation",
+      "entityId": "regulator-fed",
+      "authority": "canonical",
+      "sourceType": "regulatory_publications",
+      "canonicalUrl": "https://www.federalreserve.gov/newsevents.htm",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "publication",
+        "policy",
+        "supervision"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "sec-news",
+      "entityId": "regulator-sec",
+      "authority": "canonical",
+      "sourceType": "regulatory_publications",
+      "canonicalUrl": "https://www.sec.gov/newsroom",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "publication",
+        "policy",
+        "enforcement"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "ecb-ai",
+      "entityId": "regulator-ecb",
+      "authority": "canonical",
+      "sourceType": "regulatory_publications",
+      "canonicalUrl": "https://www.ecb.europa.eu/home/search/html/artificial-intelligence.en.html",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "publication",
+        "policy",
+        "supervision"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "eba-publications",
+      "entityId": "regulator-eba",
+      "authority": "canonical",
+      "sourceType": "regulatory_publications",
+      "canonicalUrl": "https://www.eba.europa.eu/publications-and-media",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "publication",
+        "policy",
+        "supervision"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "fca-ai",
+      "entityId": "regulator-fca",
+      "authority": "canonical",
+      "sourceType": "regulatory_publications",
+      "canonicalUrl": "https://www.fca.org.uk/firms/innovation/ai",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "publication",
+        "policy",
+        "supervision"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "rbi-notifications",
+      "entityId": "regulator-rbi",
+      "authority": "canonical",
+      "sourceType": "regulatory_publications",
+      "canonicalUrl": "https://www.rbi.org.in/Scripts/NotificationUser.aspx",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "publication",
+        "policy",
+        "supervision"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "sebi-circulars",
+      "entityId": "regulator-sebi",
+      "authority": "canonical",
+      "sourceType": "regulatory_publications",
+      "canonicalUrl": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&ssid=7&smid=0",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "publication",
+        "policy",
+        "supervision"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "mas-regulation",
+      "entityId": "regulator-mas",
+      "authority": "canonical",
+      "sourceType": "regulatory_publications",
+      "canonicalUrl": "https://www.mas.gov.sg/regulation",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "publication",
+        "policy",
+        "supervision"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "arxiv-agentic-finance",
+      "entityId": "research-arxiv",
+      "authority": "canonical",
+      "sourceType": "research_api",
+      "canonicalUrl": "https://export.arxiv.org/api/query?search_query=all%3Aagentic%20AND%20all%3Afinance&max_results=50",
+      "adapter": "research_api",
+      "cadence": "daily",
+      "allowedClaims": [
+        "paper",
+        "author",
+        "date"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "openreview-search",
+      "entityId": "research-openreview",
+      "authority": "canonical",
+      "sourceType": "research_api",
+      "canonicalUrl": "https://api2.openreview.net/notes?content.venueid=NeurIPS.cc&limit=1",
+      "adapter": "research_api",
+      "cadence": "weekly",
+      "allowedClaims": [
+        "paper",
+        "author",
+        "date"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    }
+  ]
+}

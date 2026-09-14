@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Systems Over Signals Change Event",
+  "type": "object",
+  "required": [
+    "eventId",
+    "sourceId",
+    "entityId",
+    "observedAt",
+    "publicationState",
+    "newHash",
+    "evidence"
+  ],
+  "properties": {
+    "eventId": {
+      "type": "string"
+    },
+    "sourceId": {
+      "type": "string"
+    },
+    "entityId": {
+      "type": "string"
+    },
+    "observedAt": {
+      "type": "string"
+    },
+    "publicationState": {
+      "type": "string"
+    },
+    "oldHash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "newHash": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "object"
+    }
+  }
+}
