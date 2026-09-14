@@ -14,8 +14,8 @@
       <span>Systems<br>Over Signals</span>
     </a>
     <nav aria-label="Primary">
-      <a href="#explorer">Explorer</a>
-      <a href="#sandbox">Sandbox</a>
+      <a href="#tracker">Tracker</a>
+      <a href="#sandbox">Lab</a>
       <a href="#evidence">Evidence</a>
       <a class="nav-cta" href="https://github.com/sobergium/Agentic-Protocol-Tracker">View source ↗</a>
     </nav>
@@ -23,41 +23,69 @@
 
   <main id="top">
     <section class="hero">
-      <p class="eyebrow">AI × Financial Infrastructure · Build 02</p>
-      <h1>Payment systems are<br><em>coordination systems.</em></h1>
-      <p class="dek">A working exploration of what happens when an AI agent buys an API call—and payment and service do not resolve at the same moment.</p>
+      <p class="eyebrow">AI × Financial Infrastructure · Living evidence system</p>
+      <h1>Track the systems shaping<br><em>agentic finance.</em></h1>
+      <p class="dek">A continuously updated map of agent protocols, payments, models, infrastructure and financial-services governance—grounded in primary sources and working technical experiments.</p>
       <div class="hero-actions">
-        <a class="button primary" href="#sandbox">Run the sandbox</a>
-        <a class="button quiet" href="#comparison">Compare the models</a>
+        <a class="button primary" href="#tracker">Explore the tracker</a>
+        <a class="button quiet" href="#sandbox">Run the x402 lab</a>
       </div>
       <div class="hero-metrics" aria-label="Project facts">
-        <div><strong>3</strong><span>execution models</span></div>
-        <div><strong>15</strong><span>automated tests</span></div>
-        <div><strong>0</strong><span>runtime dependencies</span></div>
-        <div><strong>v0.1</strong><span>packaged release</span></div>
+        <div><strong id="metric-entities">60</strong><span>tracked systems</span></div>
+        <div><strong id="metric-sources">66</strong><span>primary sources</span></div>
+        <div><strong id="metric-domains">11</strong><span>coverage domains</span></div>
+        <div><strong id="metric-errors">0</strong><span>broken sources</span></div>
       </div>
     </section>
 
-    <section class="thesis" id="explorer">
+    <section class="thesis" id="about">
       <div>
-        <p class="section-number">01 / Protocol Explorer</p>
-        <h2>Start with the protocol.<br>Interrogate the boundary.</h2>
+        <p class="section-number">01 / Operating thesis</p>
+        <h2>Systems first.<br>Signals second.</h2>
       </div>
       <div class="thesis-copy">
-        <p>x402 turns HTTP 402 into a machine-readable payment negotiation: challenge, signed payment payload, verification, service, settlement and response.</p>
-        <p>The difficult question is not whether each step works. It is what the system can prove when one succeeds and the next does not.</p>
+        <p>The tracker treats protocols, models, payment rails and regulation as one connected financial-infrastructure landscape.</p>
+        <p>Automated scans publish provisional changes immediately. Primary-source evidence remains visible, and a weekly post-publication review supplies human accountability.</p>
         <div class="source-row">
-          <span class="pill verified">Primary sources checked</span>
-          <span class="pill">x402 v2 vocabulary</span>
-          <span class="pill simulated">Simulation disclosed</span>
+          <span class="pill verified">Primary sources first</span>
+          <span class="pill">Automatic evidence scans</span>
+          <span class="pill simulated">Weekly human review</span>
         </div>
       </div>
+    </section>
+
+    <section class="tracker-section" id="tracker">
+      <div class="section-heading">
+        <div>
+          <p class="section-number">02 / Universal tracker</p>
+          <h2>A living map,<br>with receipts.</h2>
+        </div>
+        <p>Search the full corpus. Every entry resolves to an authoritative source and declares whether it is machine-scanned or publisher-restricted.</p>
+      </div>
+      <div class="tracker-shell">
+        <div class="tracker-toolbar">
+          <label class="search-field"><span>Search</span><input id="tracker-search" type="search" placeholder="Protocol, model, rail, regulator…" autocomplete="off"></label>
+          <label><span>Domain</span><select id="domain-filter"><option value="">All domains</option></select></label>
+          <label><span>Type</span><select id="type-filter"><option value="">All types</option></select></label>
+          <label><span>Access</span><select id="status-filter"><option value="">All access</option><option value="ok">Machine scanned</option><option value="restricted">Publisher restricted</option></select></label>
+        </div>
+        <div class="tracker-summary">
+          <span><i class="status-dot ok"></i><strong id="scanned-count">—</strong> machine-scanned</span>
+          <span><i class="status-dot restricted"></i><strong id="restricted-count">—</strong> publisher-restricted</span>
+          <span id="result-count">Loading corpus…</span>
+        </div>
+        <div class="tracker-table" role="table" aria-label="Agentic financial infrastructure tracker">
+          <div class="tracker-head" role="row"><span>System</span><span>Type</span><span>Domains</span><span>Evidence</span></div>
+          <div id="tracker-results" class="tracker-results"></div>
+        </div>
+      </div>
+      <p class="tracker-disclosure"><strong>Publication state:</strong> provisional until weekly review. “Restricted” means the primary publisher blocks automated retrieval; it does not mean the source is unavailable to a human visitor.</p>
     </section>
 
     <section class="sandbox-section" id="sandbox">
       <div class="section-heading">
         <div>
-          <p class="section-number">02 / Paid-API Sandbox</p>
+          <p class="section-number">03 / Paid-API Sandbox</p>
           <h2>Move the failure boundary.</h2>
         </div>
         <p>Choose a payment model, inject a failure, and inspect the resulting evidence trail.</p>
@@ -105,7 +133,7 @@
     <section class="evidence-section" id="evidence">
       <div class="section-heading">
         <div>
-          <p class="section-number">03 / Governance evidence</p>
+          <p class="section-number">04 / Governance evidence</p>
           <h2>The audit trail is part<br>of the product.</h2>
         </div>
         <p>Every transition records sequence, prior state, next state and decision evidence. The Python harness persists the same structure as append-only JSONL.</p>
@@ -121,7 +149,7 @@
     </section>
 
     <section class="comparison" id="comparison">
-      <p class="section-number">04 / Atomicity comparison</p>
+      <p class="section-number">05 / Atomicity comparison</p>
       <h2>There is no free atomicity.</h2>
       <p class="comparison-intro">Each model protects a different participant. None makes an arbitrary service and an external ledger a single atomic operation.</p>
       <div class="model-grid">

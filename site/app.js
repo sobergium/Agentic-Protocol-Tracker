@@ -106,3 +106,81 @@ document.querySelector("#copy-log").addEventListener("click", async event => {
   event.target.textContent = "Copied";
   setTimeout(()=>event.target.textContent=original,1200);
 });
+
+
+const trackerState = { catalog: null };
+
+function humanize(value) {
+  return value.replaceAll("_", " ").replace(/\b\w/g, letter => letter.toUpperCase());
+}
+
+function sourceStatus(entity) {
+  const statuses = entity.sources.map(source => source.scanStatus);
+  if (statuses.includes("ok")) return "ok";
+  if (statuses.includes("restricted")) return "restricted";
+  return statuses[0] || "not_scanned";
+}
+
+function optionList(select, values) {
+  for (const value of [...values].sort()) {
+    const option = document.createElement("option");
+    option.value = value;
+    option.textContent = humanize(value);
+    select.appendChild(option);
+  }
+}
+
+function renderTracker() {
+  const catalog = trackerState.catalog;
+  if (!catalog) return;
+  const query = document.querySelector("#tracker-search").value.trim().toLowerCase();
+  const domain = document.querySelector("#domain-filter").value;
+  const type = document.querySelector("#type-filter").value;
+  const status = document.querySelector("#status-filter").value;
+  const rows = catalog.entities.filter(entity => {
+    const haystack = [entity.name, entity.type, entity.steward, entity.jurisdiction, ...entity.domains].join(" ").toLowerCase();
+    return (!query || haystack.includes(query)) &&
+      (!domain || entity.domains.includes(domain)) &&
+      (!type || entity.type === type) &&
+      (!status || sourceStatus(entity) === status);
+  });
+  document.querySelector("#result-count").textContent = rows.length + " of " + catalog.counts.entities + " systems";
+  document.querySelector("#tracker-results").innerHTML = rows.length ? rows.map(entity => {
+    const evidence = entity.sources.map(source =>
+      '<a href="' + source.canonicalUrl + '" target="_blank" rel="noreferrer">' +
+      '<i class="status-dot ' + source.scanStatus + '"></i>' +
+      (source.scanStatus === "ok" ? "Primary source" : humanize(source.scanStatus)) + ' ↗</a>'
+    ).join("");
+    return '<article class="tracker-row" role="row">' +
+      '<div><strong>' + entity.name + '</strong><small>' + entity.steward + ' · ' + entity.jurisdiction + '</small></div>' +
+      '<span class="entity-type">' + humanize(entity.type) + '</span>' +
+      '<div class="domain-tags">' + entity.domains.map(item => '<span>' + humanize(item) + '</span>').join("") + '</div>' +
+      '<div class="source-links">' + evidence + '</div></article>';
+  }).join("") : '<p class="tracker-empty">No systems match these filters.</p>';
+}
+
+async function loadTracker() {
+  try {
+    const response = await fetch("generated/catalog.json", { cache: "no-store" });
+    if (!response.ok) throw new Error("catalog unavailable");
+    const catalog = await response.json();
+    trackerState.catalog = catalog;
+    document.querySelector("#metric-entities").textContent = catalog.counts.entities;
+    document.querySelector("#metric-sources").textContent = catalog.counts.sources;
+    document.querySelector("#metric-domains").textContent = catalog.counts.domains;
+    document.querySelector("#metric-errors").textContent = catalog.counts.errors;
+    document.querySelector("#scanned-count").textContent = catalog.counts.scanned;
+    document.querySelector("#restricted-count").textContent = catalog.counts.restricted || 0;
+    optionList(document.querySelector("#domain-filter"), new Set(catalog.domains));
+    optionList(document.querySelector("#type-filter"), new Set(catalog.entities.map(entity => entity.type)));
+    renderTracker();
+  } catch (error) {
+    document.querySelector("#tracker-results").innerHTML = '<p class="tracker-empty">The evidence catalog could not be loaded. View the repository audit data for status.</p>';
+    document.querySelector("#result-count").textContent = "Catalog unavailable";
+  }
+}
+
+["tracker-search", "domain-filter", "type-filter", "status-filter"].forEach(id => {
+  document.querySelector("#" + id).addEventListener("input", renderTracker);
+});
+loadTracker();
