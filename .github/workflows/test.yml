@@ -5,7 +5,7 @@ on:
   pull_request:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   sandbox:
@@ -22,3 +22,21 @@ jobs:
       - run: python -m x402_sandbox.demo --flow authorization
       - run: python -m x402_sandbox.demo --flow upfront
       - run: python -m x402_sandbox.demo --flow escrow
+
+  release:
+    if: github.ref == 'refs/heads/main' && github.event.head_commit.message == 'Package x402 sandbox release'
+    needs: sandbox
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build release archive
+        run: git archive --format=zip --output=x402-paid-api-sandbox-v0.1.0.zip HEAD:x402-sandbox
+      - name: Publish tagged GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >
+          gh release create x402-sandbox-v0.1.0
+          x402-paid-api-sandbox-v0.1.0.zip
+          --target "$GITHUB_SHA"
+          --title "x402 Paid-API Sandbox v0.1.0"
+          --notes-file RELEASE_NOTES.md
