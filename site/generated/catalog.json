@@ -1,11 +1,11 @@
 {
   "counts": {
-    "assessed": 65,
+    "assessed": 66,
     "domains": 11,
     "entities": 60,
-    "errors": 1,
+    "errors": 0,
     "restricted": 6,
-    "scanned": 59,
+    "scanned": 60,
     "sources": 66
   },
   "domains": [
@@ -32,7 +32,7 @@
       "sources": [
         {
           "canonicalUrl": "https://modelcontextprotocol.io/specification/latest",
-          "contentHash": "3a112e0c5cbc5b911509bcd21db80d50c41627e922ddb0e51226c26ce44465cc",
+          "contentHash": "8f9cd1bffb9b031bb867db6fa48a540f76f71b4e533e21d7fa008542b8768e73",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "mcp-spec",
@@ -40,7 +40,7 @@
         },
         {
           "canonicalUrl": "https://github.com/modelcontextprotocol/modelcontextprotocol",
-          "contentHash": "decbabe575b0431421360e598599a4448710b6ddde78b877b83508e31b0c50ab",
+          "contentHash": "e986264ec472a912655e88d553232b2aef006cfe6197d655c7c780e1cda9c08d",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "mcp-repo",
@@ -61,7 +61,7 @@
       "sources": [
         {
           "canonicalUrl": "https://github.com/a2aproject/A2A",
-          "contentHash": "e28f09ea0ad7c2e631c14571c1fc26a84846b91663506dbfc03836c31f4e2931",
+          "contentHash": "97810d2dad61d1711f635f7d6546b1c6236a133af14bff3fb9827f9af4653a32",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "a2a-repo",
@@ -82,7 +82,7 @@
       "sources": [
         {
           "canonicalUrl": "https://github.com/ag-ui-protocol/ag-ui",
-          "contentHash": "60e711908f485d9e26cc1e8821a7eecdfceb665fa4c591bc2b85dc56347c8473",
+          "contentHash": "dbcb462d25254041f3192b23ed25d70d1c3a5dba5b69d1e630dd4e5012cd8522",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "ag-ui-repo",
@@ -103,7 +103,7 @@
       "sources": [
         {
           "canonicalUrl": "https://github.com/agent-network-protocol/AgentNetworkProtocol",
-          "contentHash": "3f7ac4c2a2d0d1685c47bd81626ce7974b6a0a653d56f30641749f7f577e497e",
+          "contentHash": "de93b883b36915cc31f082b192f6dcca1864975e16363d98716a6b531ed3eb65",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "anp-repo",
@@ -124,7 +124,7 @@
       "sources": [
         {
           "canonicalUrl": "https://www.agenticcommerce.dev/",
-          "contentHash": "06c2fef2dd81abc66b4e48c7aa29621ff8ace25384165e426ccc57f1cbb9157f",
+          "contentHash": "6e389673748ac43595df9127601d876a961359db663e273db486a473181840e7",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "acp-commerce-spec",
@@ -167,7 +167,7 @@
       "sources": [
         {
           "canonicalUrl": "https://github.com/google-agentic-commerce/AP2",
-          "contentHash": "513b7563ee509a477d71d35415db83706637bb4353ef276470ad1908bf2de48e",
+          "contentHash": "9d98328a7cfd6c118235f6ccf57bec730a5788acffa4cd6f32d74784e6620ce4",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "ap2-repo",
@@ -188,7 +188,7 @@
       "sources": [
         {
           "canonicalUrl": "https://docs.x402.org/",
-          "contentHash": "1705c6faeaca052d265e4ce9809c504b9081c0e6db89707b9459d9bbed46c35f",
+          "contentHash": "78df4cd0add7e931bde480acfd388b5a55cb674735624c772adbc0e0efe9c2f9",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "x402-docs",
@@ -196,7 +196,7 @@
         },
         {
           "canonicalUrl": "https://github.com/coinbase/x402",
-          "contentHash": "cd54143599f99603016306bd073a4f3d58c99132560104ec493ac63fafe33aa3",
+          "contentHash": "e3b25355db4b9a4b20aee42e66a0682f1095cee4b6eeb4cf7488e2d6f78f41d8",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "x402-repo",
@@ -260,7 +260,7 @@
       "sources": [
         {
           "canonicalUrl": "https://datatracker.ietf.org/wg/oauth/documents/",
-          "contentHash": "de6f9f5a8703727693cfd756f9a29a959cabd663e51a6d208d3a29e4d222fbd2",
+          "contentHash": "6d50ba30a47a7ff7d78216b3bec3d2da64a1279a580bd0005dcf81439ee4319f",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "ietf-oauth-documents",
@@ -282,7 +282,7 @@
       "sources": [
         {
           "canonicalUrl": "https://openid.net/wg/fapi/specifications/",
-          "contentHash": "1ccef59a8f76ea1532b8b7495026da934e5437dcbc3a180a54e7355a6d8d2fcf",
+          "contentHash": "70a22345f006f088e78f4391ed86c6e0c3409d5c4c9b716caa4563eb675f5d78",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "openid-fapi",
@@ -345,7 +345,7 @@
       "sources": [
         {
           "canonicalUrl": "https://fidoalliance.org/specifications/",
-          "contentHash": "914b90abcd7e7bb5c05aedefbdace9fe80c34744270a9d200fed8fa017362bd1",
+          "contentHash": "bd2393b18a57e85b45c89cba176a2ba82528d106a2c70da66a34373a1ef646b2",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "fido-specifications",
@@ -408,7 +408,7 @@
       "sources": [
         {
           "canonicalUrl": "https://www.emvco.com/emv-technologies/",
-          "contentHash": "9428881fa787d96154b1b7e1bd48527f3a89e15b96de637f24b1831461f4028d",
+          "contentHash": "f3356170941071b22b939655dfe181770291657ba646763a6b8739400ca8518d",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "emvco-specifications",
@@ -513,7 +513,7 @@
       "sources": [
         {
           "canonicalUrl": "https://www.theclearinghouse.org/payment-systems/rtp",
-          "contentHash": "25995c4ba8bc5d0bddcc0030b3ca958e6da0c5f16860fc5c784ca31c3bc9e120",
+          "contentHash": "19dbb8cfea608be77b06959c140a6182bfd23dba24f13dc5cbf4ed3ed685757e",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "tch-rtp",
@@ -597,7 +597,7 @@
       "sources": [
         {
           "canonicalUrl": "https://github.com/ethereum/consensus-specs",
-          "contentHash": "a4412210cf0a3daec4a9e90dd90cb2fe2238a141f27fcc7a6c9f902ded4412c5",
+          "contentHash": "98fc8d65f70d34bc28fc05f0a56f438b22bed6f69c929a4245a3d2d205ed2f84",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "ethereum-specs",
@@ -618,7 +618,7 @@
       "sources": [
         {
           "canonicalUrl": "https://solana.com/docs",
-          "contentHash": "10941fb37ea61cb227262045652864b84a0e538bef686c0e9c0b44f7605ad8f5",
+          "contentHash": "7cc70213c52b20a8a615b7d5d63e5084d0ffe905d3bdd78abe4ccdc92448d2e9",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "solana-docs",
@@ -640,7 +640,7 @@
       "sources": [
         {
           "canonicalUrl": "https://developers.circle.com/stablecoins/",
-          "contentHash": "4f8765db71e15da3db3716178555d3c30c6c18510a5449cd4dadfab565d8bae2",
+          "contentHash": "2d73b95555700970c7a8a303711d7458010d3101d6ca20c34422cc1adc170a2f",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "circle-usdc",
@@ -662,7 +662,7 @@
       "sources": [
         {
           "canonicalUrl": "https://platform.openai.com/docs/models",
-          "contentHash": "78bfe9c0ea8942e5fefaffff392ac1a76da4d28faa130eb365a2eec4968236b6",
+          "contentHash": "c05584dc0e59c9035a2ab98e5dde69bf65bca51443abd94d6762d278af9ec23f",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "openai-models",
@@ -670,7 +670,7 @@
         },
         {
           "canonicalUrl": "https://developers.openai.com/api/docs/changelog",
-          "contentHash": "c39db1c1c05d97c1032f4f8a0dd76e271e8800051f56641df6ac677a6279cddc",
+          "contentHash": "afb87fd359cbbde2201404e76865f4df0b40abca2d1fe6e51aab2c230e470c19",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "openai-release-notes",
@@ -692,7 +692,7 @@
       "sources": [
         {
           "canonicalUrl": "https://docs.anthropic.com/en/docs/about-claude/models/overview",
-          "contentHash": "12f95da337c1d48d941da8f8554c4ec581d92f28d8d8a3f0898f5f354ed24a22",
+          "contentHash": "d0a7da5c2e66f82de9159c950d0a75ca9744e9c061f39359cefbd12ebdc3b569",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "anthropic-models",
@@ -700,7 +700,7 @@
         },
         {
           "canonicalUrl": "https://docs.anthropic.com/en/release-notes/overview",
-          "contentHash": "b6a5980f497f11a93c1fee72fa1c8351bc5563f964f64442f932173896b11cf9",
+          "contentHash": "a44230a4f8fe0a33d3372fba74585d33a47f56c53f914d57c2a742b419c73814",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "anthropic-release-notes",
@@ -722,7 +722,7 @@
       "sources": [
         {
           "canonicalUrl": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models",
-          "contentHash": "ab2791b8a8b0ee88a52f1a809a7ed972879c863c480f0a257bbbc71cde0c33ae",
+          "contentHash": "75aa6426dc44e248f8ce767c67a2902a9cf0e7c81f6fdc0c8a5eb05acefd2528",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "google-models",
@@ -730,7 +730,7 @@
         },
         {
           "canonicalUrl": "https://cloud.google.com/vertex-ai/generative-ai/docs/release-notes",
-          "contentHash": "498cec0a394fd012f2d09cf3b1ee64888722bc175fd9ca1a336cad21e1b3ab17",
+          "contentHash": "c1f3f2dd7a6fb0c22ab4714010a6a3a7b0fc035011d42a3d88f4a14529893ac8",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "google-release-notes",
@@ -751,7 +751,7 @@
       "sources": [
         {
           "canonicalUrl": "https://github.com/meta-llama/llama-models",
-          "contentHash": "608d2818919bb0a223c2b5f6a76b8d1aa4f30458dcef760dd4c32bbe9633a8a2",
+          "contentHash": "583fe43f650bf9f601d6e934648f7b521613282a4808f8fd3d13909090197c8f",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "meta-llama",
@@ -801,7 +801,7 @@
       "sources": [
         {
           "canonicalUrl": "https://docs.cohere.com/docs/models",
-          "contentHash": "4ca285c3f86cd32ed77bacded650577f71d40a8357a4acc7dfa8f8faba5a857c",
+          "contentHash": "d3b9c0fcdc7d0f5316cf6da4903da82327b995afb5be4ac473b8103fad4c3930",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "cohere-models",
@@ -822,7 +822,7 @@
       "sources": [
         {
           "canonicalUrl": "https://docs.x.ai/docs/models",
-          "contentHash": "fb2e735279e32744809ba0cbc23357eb1761a560adc44ae0a509f0b33750413e",
+          "contentHash": "d0a60849cd3495c1eb201a7a5fcf085af2fa619c4dc641c5da27171749d4e548",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "xai-models",
@@ -887,7 +887,7 @@
       "sources": [
         {
           "canonicalUrl": "https://github.com/openai/openai-agents-python",
-          "contentHash": "f37ff58ba9db7236cc5b074bfaeb79e5008213b77e3a48eb8e479c2dc674bbe7",
+          "contentHash": "4d228cd879c7200b7a2b750d0c4272d90a4223ab638920a6656e3fa0450dd4ff",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "openai-agents-repo",
@@ -908,7 +908,7 @@
       "sources": [
         {
           "canonicalUrl": "https://github.com/google/adk-python",
-          "contentHash": "aa29609f78eb4c806832c5b318e426c88d467749d460e1723af4aa7c324499b3",
+          "contentHash": "71cb4c824710c3da6cb42ba98f518622e682bb00178cd6068af90046bb00cabe",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "google-adk-repo",
@@ -929,7 +929,7 @@
       "sources": [
         {
           "canonicalUrl": "https://github.com/microsoft/autogen",
-          "contentHash": "3bb9fe3c12f99d397ee6b1a622ed9cdd5daf762d82c8438b46381cb902d94215",
+          "contentHash": "d96d910e087f8b5477c484a5e3af7e718c3b9b30137a67b18b338974902f1dee",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "autogen-repo",
@@ -950,7 +950,7 @@
       "sources": [
         {
           "canonicalUrl": "https://github.com/microsoft/semantic-kernel",
-          "contentHash": "34073983c0d5d346cae097f3358a1d897461c12e9b4e395e868293619142b94c",
+          "contentHash": "73731bb04f8da774a69a39099739e8b683f550690e68e0c283493ccbe8e8dc6c",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "semantic-kernel-repo",
@@ -971,7 +971,7 @@
       "sources": [
         {
           "canonicalUrl": "https://github.com/langchain-ai/langgraph",
-          "contentHash": "9a1384b750fee8a0155e04e6d30a24f2d0115319f65622456d0dfdffc941cea6",
+          "contentHash": "8eb5ee0a137bb507a0d3241587d83d810798f72bcb04b965ba978773a72c9d1c",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "langgraph-repo",
@@ -992,7 +992,7 @@
       "sources": [
         {
           "canonicalUrl": "https://github.com/crewAIInc/crewAI",
-          "contentHash": "b0994f3493f1043b4431f9e07cdb2c0a1ab115610f90f0f3bcb0783d6f93994a",
+          "contentHash": "425cd8ac02febad5f67825706c7ea2cae363314a7ffae85d41902ccf8471eb11",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "crewai-repo",
@@ -1013,7 +1013,7 @@
       "sources": [
         {
           "canonicalUrl": "https://github.com/pydantic/pydantic-ai",
-          "contentHash": "c0c76fd8cfb5041f00f54f967f657c6d9852bba5c9503680f3410de0934dfba0",
+          "contentHash": "051844383ec11b717dc5bbeb8ceec3aa8adb3fbfdaebc5b1f329c80af17389b4",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "pydantic-ai-repo",
@@ -1034,7 +1034,7 @@
       "sources": [
         {
           "canonicalUrl": "https://github.com/run-llama/llama_index",
-          "contentHash": "0dcd027d279207e9fc5788a14a6fab85c4de2637e83939bb202bef71454be6e5",
+          "contentHash": "a2e9068f02e1a229b1c25dca6b4ec20f21a80cdb00829f398b496d66eecf0c53",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "llamaindex-repo",
@@ -1078,7 +1078,7 @@
       "sources": [
         {
           "canonicalUrl": "https://www.fsb.org/work-of-the-fsb/financial-innovation-and-structural-change/artificial-intelligence-and-machine-learning/",
-          "contentHash": "799558074865923cefee8ce78bf9bd848347a0c99cd6957b588400ea016e9e2b",
+          "contentHash": "7b0d63b4168b74d069eaa8dc89da6e3b1e03de66430dfe3e80b8c99fe2bf53b9",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "fsb-publications",
@@ -1100,7 +1100,7 @@
       "sources": [
         {
           "canonicalUrl": "https://www.iosco.org/publications/?subsection=public_reports",
-          "contentHash": "1be7986c2b7981e10bbf5eae7bd5f84692df1baaf6ee699e54c469245e048cb4",
+          "contentHash": "3bc22df3cdee1c5c3e6ec34d0594291e08126fd65bb48dc232976c41c1fc0a75",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "iosco-publications",
@@ -1144,7 +1144,7 @@
       "sources": [
         {
           "canonicalUrl": "https://www.federalreserve.gov/newsevents.htm",
-          "contentHash": "04e3d2a9a5f6494f48000516cd87d723071800eb72d570717668c5dcecd1ce75",
+          "contentHash": "33dee046bd39c6d240d7aead013b6a8fcd2fbf03373981a84a1113e2274fea3c",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "fed-innovation",
@@ -1210,7 +1210,7 @@
       "sources": [
         {
           "canonicalUrl": "https://www.eba.europa.eu/publications-and-media",
-          "contentHash": "88e69f12e5584a9999fc33fd595a3fc7921d8b1b681816712c087c93bba6c581",
+          "contentHash": "b7bf9be7d81242a48439c5eb241fdd4a9d91d1725b8057042de670c2925919c6",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "eba-publications",
@@ -1232,7 +1232,7 @@
       "sources": [
         {
           "canonicalUrl": "https://www.fca.org.uk/firms/ai-financial-services",
-          "contentHash": "51f4d765cc5f608ead3e8f94785818849362ca2293465016296aafffd3761bc2",
+          "contentHash": "8980c781cd6d4d4a81a11dcfa49f561155bc91ca8c2b6d60197699f448459c5d",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "fca-ai",
@@ -1254,7 +1254,7 @@
       "sources": [
         {
           "canonicalUrl": "https://www.rbi.org.in/Scripts/NotificationUser.aspx",
-          "contentHash": "73aa26ef67f5a824d732431466f6f1bbcdeb00e3320da34ebc0a7323297b26c4",
+          "contentHash": "f650285845f1605763d5bc02741f4fca63a9208325f131174531c152fa623a49",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "rbi-notifications",
@@ -1276,7 +1276,7 @@
       "sources": [
         {
           "canonicalUrl": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&ssid=7&smid=0",
-          "contentHash": "8da3422ca425b814a0ed23c8b51f554ddf8ea53eb5df580d56e274c8b234d427",
+          "contentHash": "28b66707d1b67ccd3c57f1548eecd296be63c85cf88122311758c6de93890193",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "sebi-circulars",
@@ -1298,7 +1298,7 @@
       "sources": [
         {
           "canonicalUrl": "https://www.mas.gov.sg/regulation",
-          "contentHash": "4dff2279a46d53510c8a1aae181268906969ff793d5b1d9039fc09994d294ddd",
+          "contentHash": "8430125c972e186ad9dfdc896a3a44aa29b2e2ab419cc652ec6efcf1e8ba156b",
           "reviewStatus": "unreviewed",
           "scanStatus": "ok",
           "sourceId": "mas-regulation",
@@ -1319,9 +1319,9 @@
       "sources": [
         {
           "canonicalUrl": "https://export.arxiv.org/api/query?search_query=all%3Aagentic%20AND%20all%3Afinance&max_results=50",
-          "contentHash": null,
+          "contentHash": "40fe4fb743e158b9efbb84417e4e60ef04abdb7451bd47bbd26e1a7cac39eaad",
           "reviewStatus": "unreviewed",
-          "scanStatus": "error",
+          "scanStatus": "ok",
           "sourceId": "arxiv-agentic-finance",
           "sourceType": "research_api"
         }
