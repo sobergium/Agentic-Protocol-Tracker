@@ -1057,6 +1057,36 @@
       ],
       "reviewStatus": "unreviewed",
       "enabled": true
+    },
+    {
+      "id": "nano-x402-exact",
+      "entityId": "rail-nano-xno",
+      "authority": "canonical",
+      "sourceType": "payment_network",
+      "canonicalUrl": "https://facilitator.pursekeeper.dev/supported",
+      "adapter": "http",
+      "cadence": "daily",
+      "allowedClaims": [
+        "availability",
+        "scheme"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
+    },
+    {
+      "id": "nano-orv-consensus",
+      "entityId": "rail-nano-xno",
+      "authority": "canonical",
+      "sourceType": "specification",
+      "canonicalUrl": "https://docs.nano.org/protocol-design/orv-consensus/",
+      "adapter": "http",
+      "cadence": "monthly",
+      "allowedClaims": [
+        "finality",
+        "fee"
+      ],
+      "reviewStatus": "unreviewed",
+      "enabled": true
     }
   ]
 }
