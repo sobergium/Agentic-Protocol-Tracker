@@ -1,21 +1,21 @@
 {
   "observations": {
     "a2a-repo": {
-      "contentHash": "34049d16a165790ef297d257218f0f43546508824833909b771a8593aa2f2fa8",
+      "contentHash": "61dd761a3ceb8fa234285da62f762e9be32b801d374dffdb283f9e75cdf6c0c1",
       "entityId": "protocol-a2a",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"9b9c8bb84836b781a0e481a6b4365bbb333ed0e52ddd51e3f284d0f1dd94c6e8\"",
-          "lastModified": "Sun, 04 Oct 2026 05:38:28 GMT",
+          "etag": "\"1139a24db4a2924f6bc345d0233fa5ec8f191298ece05f74a75e61068db2fe27\"",
+          "lastModified": "Sun, 04 Oct 2026 16:24:10 GMT",
           "resolvedUrl": "https://api.github.com/repos/a2aproject/A2A",
           "status": 200,
           "url": "https://api.github.com/repos/a2aproject/A2A"
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"e248a39e7a0c0bc45def40ce2ab89aaea6a2790485b564a0fe07aabf99f9617d\"",
+          "etag": "\"93f7c2bdc0b79981528bb92b108e58e82bf414f48725362783636ef9ce5408a7\"",
           "lastModified": "",
           "resolvedUrl": "https://api.github.com/repos/a2aproject/A2A/releases?per_page=10",
           "status": 200,
@@ -23,8 +23,8 @@
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"ab293c62774489994ebf5f5b8d24ea7dd9b7cedaf28372e7a1861622b5cb3615\"",
-          "lastModified": "Sun, 04 Oct 2026 05:38:28 GMT",
+          "etag": "\"6dbdee84f462b0d7206582cd6a45f146a36cd9050df62fc4dc19f734f45f325e\"",
+          "lastModified": "Sun, 04 Oct 2026 16:24:10 GMT",
           "resolvedUrl": "https://api.github.com/repos/a2aproject/A2A/tags?per_page=10",
           "status": 200,
           "url": "https://api.github.com/repos/a2aproject/A2A/tags?per_page=10"
@@ -34,9 +34,9 @@
       "status": "ok"
     },
     "acp-commerce-spec": {
-      "contentHash": "abf95121d98ae4be951e06b5aeae2840479c7ff347ca67e65b3390e901efe2fe",
+      "contentHash": "babce7fbccd85ca3d7fe23a8c99a94e2c62481df82a306a8d9aeb18262e91d11",
       "entityId": "protocol-acp-commerce",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html; charset=utf-8",
@@ -51,21 +51,21 @@
       "status": "ok"
     },
     "ag-ui-repo": {
-      "contentHash": "d21e7dfcb67f5177d5b9819fa0acf7340480d2d14beb52b1227f541a25416e8d",
+      "contentHash": "a14c6f61b6b3c8a59d8816a5c6658cc8f9c620a74214a995c8f873e99a051015",
       "entityId": "protocol-ag-ui",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"01e3ee3bd2eb6ca0651bf646f8b46f6efc0553cb950e750d9a5a757451951bce\"",
-          "lastModified": "Sun, 04 Oct 2026 04:13:39 GMT",
+          "etag": "\"3134cdfc287f8dcec90701c217205c7027be4e0aca08ce508f4ae77fd09f288a\"",
+          "lastModified": "Sun, 04 Oct 2026 16:13:23 GMT",
           "resolvedUrl": "https://api.github.com/repos/ag-ui-protocol/ag-ui",
           "status": 200,
           "url": "https://api.github.com/repos/ag-ui-protocol/ag-ui"
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"16291c1326b08e25255c1b74d933dfecf38e86cf2f3dd5fadd9e53d728593151\"",
+          "etag": "\"b95c752dcef072b08b08ffeceabd18bf48c13dcf7202dd57c044c02484a1aba9\"",
           "lastModified": "",
           "resolvedUrl": "https://api.github.com/repos/ag-ui-protocol/ag-ui/releases?per_page=10",
           "status": 200,
@@ -73,8 +73,8 @@
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"9e828293569c5ab0a134e83dd3388687564b60bbcb18d3d66dafb4207feb2a6f\"",
-          "lastModified": "Sun, 04 Oct 2026 04:13:39 GMT",
+          "etag": "\"f389e840b021d9f01ac1dd95b745e28a04fa83795ecd88cfa8be514ed664a0a9\"",
+          "lastModified": "Sun, 04 Oct 2026 16:13:23 GMT",
           "resolvedUrl": "https://api.github.com/repos/ag-ui-protocol/ag-ui/tags?per_page=10",
           "status": 200,
           "url": "https://api.github.com/repos/ag-ui-protocol/ag-ui/tags?per_page=10"
@@ -117,9 +117,9 @@
       "status": "ok"
     },
     "anthropic-models": {
-      "contentHash": "113b906cd0ce462f359daafc4a1ada2ac2ec5d20e2aad4d19fe45d10416070ee",
+      "contentHash": "14266f3261c4c061cb534dc1c12b003458ddc3e9bdd22d964a0a6c315bc8ecc8",
       "entityId": "provider-anthropic",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html; charset=utf-8",
@@ -134,9 +134,9 @@
       "status": "ok"
     },
     "anthropic-release-notes": {
-      "contentHash": "cac12e14f039f025d3e3099b08a2af2970f20e07e00d0367dc09c3f139a8307b",
+      "contentHash": "33f2047d8368fab65338383f191ecee2695a89086e914c6ed84f05baaf0125f6",
       "entityId": "provider-anthropic",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html; charset=utf-8",
@@ -151,13 +151,13 @@
       "status": "ok"
     },
     "ap2-repo": {
-      "contentHash": "4a641cb099080be5ba7c0477f0bcb7bf8256f8f83ad0b23d16b3a6e4bd18c16d",
+      "contentHash": "8c336837b3aecd79de9c057c43b17eb0c2a372744e51af819f1afacf62ad259d",
       "entityId": "protocol-ap2",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"42332ebe008d70c7cb8eded171fd823176dc715eb01f2fcf77c41e6e584e6230\"",
+          "etag": "\"7208d1a755e805e9c7184563dfbd1d2ced243f57cd7f354780e491f0d41f4bdb\"",
           "lastModified": "Sun, 04 Oct 2026 05:32:10 GMT",
           "resolvedUrl": "https://api.github.com/repos/google-agentic-commerce/AP2",
           "status": 200,
@@ -165,7 +165,7 @@
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"e75f146079bcc08b49925c933e381951d841d23b4ce9e7df906b122cc1a436d1\"",
+          "etag": "\"abf33010fc995a94e72c52329cdc5781a7b7606bd119a18fc3fa5ea373e3691d\"",
           "lastModified": "",
           "resolvedUrl": "https://api.github.com/repos/google-agentic-commerce/AP2/releases?per_page=10",
           "status": 200,
@@ -173,7 +173,7 @@
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"041642d9b433b2e53735e8448003188c2fb5c41cccb23f675e466f26bd8bfcf9\"",
+          "etag": "\"f8916957a54598fc127dbba4288e030a5f4c6e852ad93b9cca84de33d5676f54\"",
           "lastModified": "Sun, 04 Oct 2026 05:32:10 GMT",
           "resolvedUrl": "https://api.github.com/repos/google-agentic-commerce/AP2/tags?per_page=10",
           "status": 200,
@@ -184,9 +184,9 @@
       "status": "ok"
     },
     "arxiv-agentic-finance": {
-      "contentHash": "10403588c015857f17ef97d45d09c0c64f1000496590175b5e2c8dd456b97205",
+      "contentHash": "3016f56d50943242bd991622038e82b644204335157010f945c7d9c2343de82b",
       "entityId": "research-arxiv",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "application/atom+xml; charset=utf-8",
@@ -201,21 +201,21 @@
       "status": "ok"
     },
     "autogen-repo": {
-      "contentHash": "253990c1548e1dca892ea0bbc085b5defeeb09b150ce42500dd80e45a0b790a6",
+      "contentHash": "9bd625ea434a0ad7eb6b8524030ff4b21f09707749316dbaf5a27b611799e822",
       "entityId": "runtime-autogen",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"bc7e5847bb3222d21b2936f9a6c54a10e898898de9240a254f2a4ff0623bd557\"",
-          "lastModified": "Sun, 04 Oct 2026 05:20:54 GMT",
+          "etag": "\"ff81d80d7af73c61e528c8893b245ec34e2bf68ee476066d88e145f0cb8624e0\"",
+          "lastModified": "Sun, 04 Oct 2026 14:21:17 GMT",
           "resolvedUrl": "https://api.github.com/repos/microsoft/autogen",
           "status": 200,
           "url": "https://api.github.com/repos/microsoft/autogen"
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"6a35bca72a1cda915d53f856f46f620c8cd3f7eb0a8cd2a36bbde81ff1909679\"",
+          "etag": "\"c0d7c9f4203e84394b1ead07a23b84f4a69866fc6eaf2c371b8454b60c22258d\"",
           "lastModified": "",
           "resolvedUrl": "https://api.github.com/repos/microsoft/autogen/releases?per_page=10",
           "status": 200,
@@ -223,8 +223,8 @@
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"a5ca69c86aea6aefa95d4aef2d45b2d128e19bf582805ac4b41cb87c7bd208f5\"",
-          "lastModified": "Sun, 04 Oct 2026 05:20:54 GMT",
+          "etag": "\"b9fe64699d34adc520bc66ff0aeb907223b034f3cd867ce18ea6f9421726e3ac\"",
+          "lastModified": "Sun, 04 Oct 2026 14:21:17 GMT",
           "resolvedUrl": "https://api.github.com/repos/microsoft/autogen/tags?per_page=10",
           "status": 200,
           "url": "https://api.github.com/repos/microsoft/autogen/tags?per_page=10"
@@ -336,21 +336,21 @@
       "status": "ok"
     },
     "crewai-repo": {
-      "contentHash": "78f20aa3f8b28adfd67f5cb7b454ceae634763b6d9673eee121cabb4e189890c",
+      "contentHash": "42157c23b8f221ce5c100a01dbe9ac189e09e641455a60a11b756e1af89b57f9",
       "entityId": "runtime-crewai",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"6740d9ac0b19cc0d6fce1f7785d0bcfb6b07ce2d4834105cfb6eb9f5a79d7a25\"",
-          "lastModified": "Sun, 04 Oct 2026 04:20:14 GMT",
+          "etag": "\"e1f3c14c51569ca43dc39f860df788224ca89b5502966e8ed3b5c7f92a26a87c\"",
+          "lastModified": "Sun, 04 Oct 2026 16:08:53 GMT",
           "resolvedUrl": "https://api.github.com/repos/crewAIInc/crewAI",
           "status": 200,
           "url": "https://api.github.com/repos/crewAIInc/crewAI"
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"c5e51ac39d1be3a8e0ed49eac4a52576a7d324eaaed2ed7e30b7f939895b683f\"",
+          "etag": "\"88438d0d2231d21a03a87c82ad72c495b655120220a6de6822e5bc9c5a241b20\"",
           "lastModified": "",
           "resolvedUrl": "https://api.github.com/repos/crewAIInc/crewAI/releases?per_page=10",
           "status": 200,
@@ -358,8 +358,8 @@
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"d48f55142a83375013da9e2abee5eea301955056d959447541b2ac8f4cc6adef\"",
-          "lastModified": "Sun, 04 Oct 2026 04:20:14 GMT",
+          "etag": "\"f20cf98cd540dae2afccaa101fbd6d4364e6149478e3de1c0be012e5aaf33131\"",
+          "lastModified": "Sun, 04 Oct 2026 16:08:53 GMT",
           "resolvedUrl": "https://api.github.com/repos/crewAIInc/crewAI/tags?per_page=10",
           "status": 200,
           "url": "https://api.github.com/repos/crewAIInc/crewAI/tags?per_page=10"
@@ -403,9 +403,9 @@
       "status": "ok"
     },
     "emvco-specifications": {
-      "contentHash": "7a110fad9b0b5968d11d2226c338664df9369be941c30c366510d2790a314326",
+      "contentHash": "a8afb24eda665286daab164473df2447c6319ac21bb76c082d70af6165a3a302",
       "entityId": "standard-emvco",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html; charset=UTF-8",
@@ -454,21 +454,21 @@
       "status": "ok"
     },
     "ethereum-specs": {
-      "contentHash": "026654fcc11ad45b3132bf4abfdd66e196be2a82dab0d6db975971737234f0d6",
+      "contentHash": "57a06b8dc4315f7576ca2c2e6d5b169e97b5f9162857ef0c90cf07662e061a9e",
       "entityId": "chain-ethereum",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"e8b38f0e643f506bdf254c430f00ef3022c0239a3685241ac0d5b6bb2e466e87\"",
-          "lastModified": "Fri, 02 Oct 2026 15:14:07 GMT",
+          "etag": "\"fdd22f095af04aeec7251fbc77ca5e4cf3514bdbf88fb64c35c8c6c57a46575c\"",
+          "lastModified": "Sun, 04 Oct 2026 16:02:03 GMT",
           "resolvedUrl": "https://api.github.com/repos/ethereum/consensus-specs",
           "status": 200,
           "url": "https://api.github.com/repos/ethereum/consensus-specs"
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"ba8b595a433c3efc73737b3c9c6f9b8e6d6793eb8a16a0c78aba17a147b07c04\"",
+          "etag": "\"3f837bbb0d0441a90319f7a818f08ff376aafbd3be7cb07286843d2fadf6166d\"",
           "lastModified": "",
           "resolvedUrl": "https://api.github.com/repos/ethereum/consensus-specs/releases?per_page=10",
           "status": 200,
@@ -476,8 +476,8 @@
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"13014f2c16864d82fc3f4d29871b3d5e76bebdfef0285ccc39f631f4e7a2bb44\"",
-          "lastModified": "Fri, 02 Oct 2026 15:14:07 GMT",
+          "etag": "\"dd38e2ca11749cfc6398d6b7f8d28929dda68e27f4c0d7e5275e7db37fe7e50b\"",
+          "lastModified": "Sun, 04 Oct 2026 16:02:03 GMT",
           "resolvedUrl": "https://api.github.com/repos/ethereum/consensus-specs/tags?per_page=10",
           "status": 200,
           "url": "https://api.github.com/repos/ethereum/consensus-specs/tags?per_page=10"
@@ -500,14 +500,14 @@
       "status": "restricted"
     },
     "fca-ai": {
-      "contentHash": "88041835b62f56746ad444e8e5e90882cc380c911d0e4942a6c6d123a0f6563e",
+      "contentHash": "0458f1e12ca517297b6dce612a995241f2d1fe42004d1bd835bb28885444abfb",
       "entityId": "regulator-fca",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html; charset=UTF-8",
           "etag": "",
-          "lastModified": "Sun, 04 Oct 2026 05:39:42 GMT",
+          "lastModified": "Sun, 04 Oct 2026 16:20:32 GMT",
           "resolvedUrl": "https://www.fca.org.uk/firms/ai-financial-services",
           "status": 200,
           "url": "https://www.fca.org.uk/firms/ai-financial-services"
@@ -517,9 +517,9 @@
       "status": "ok"
     },
     "fed-innovation": {
-      "contentHash": "27973d8860f66c4c910694ed3f4f957e1b79aa10eed5dec5a99f675571f67c52",
+      "contentHash": "9453de175a1464eab7f5e525922cef2b7155d9a08a8e4cf47d30e60696ab7e6d",
       "entityId": "regulator-fed",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html",
@@ -551,9 +551,9 @@
       "status": "ok"
     },
     "fido-specifications": {
-      "contentHash": "b9cec1dfe1000ecb304502153ff0170219b429722c65f4a00dbf3192ccc4665c",
+      "contentHash": "cd136ba78fcb945b342f561b1de610660bae4036b62101b183a446be874757b4",
       "entityId": "standard-fido",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html; charset=UTF-8",
@@ -568,9 +568,9 @@
       "status": "ok"
     },
     "fsb-publications": {
-      "contentHash": "c85849e02062d27cb03cd5fa73d02e852d929680d4bf1cc74e92ba8f0fed233c",
+      "contentHash": "b0261676958c338a21b252df831ce89ff3c8827d9186727c4246b54e5101946e",
       "entityId": "regulator-fsb",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html; charset=UTF-8",
@@ -585,21 +585,21 @@
       "status": "ok"
     },
     "google-adk-repo": {
-      "contentHash": "7255a965c09961f8463b5e10aff335688e92dfc914e8b63ecfc23a8b54a29e50",
+      "contentHash": "0022995753495687aab4706b5f642102518b8bd77a69ed277efc1a0bb57f01b2",
       "entityId": "runtime-google-adk",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"4b2c2545821673180d569f7c612ffc43e96a9c9bd4a3d2add5efac1279b80d14\"",
-          "lastModified": "Sun, 04 Oct 2026 03:40:04 GMT",
+          "etag": "\"c26f583888d06c84b4596a3ac707e4b3276f926b3de7f2debe0b8e224c733786\"",
+          "lastModified": "Sun, 04 Oct 2026 16:06:15 GMT",
           "resolvedUrl": "https://api.github.com/repos/google/adk-python",
           "status": 200,
           "url": "https://api.github.com/repos/google/adk-python"
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"bcf092c20c6ee7131edf65bfd8412c37904b138c049da61f8d62e8a9c34fe490\"",
+          "etag": "\"b6d61c202cd3c55870f284da6d731b3f86326ed46ef8f462cde32cca9407ff13\"",
           "lastModified": "",
           "resolvedUrl": "https://api.github.com/repos/google/adk-python/releases?per_page=10",
           "status": 200,
@@ -607,8 +607,8 @@
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"6e7e2ff0a7dd2f890e1b2898da1cae057da6809045dbd1f63c3404a2b7b7539a\"",
-          "lastModified": "Sun, 04 Oct 2026 03:40:04 GMT",
+          "etag": "\"37699b7b58d2d9f1d718d121ff15a5dfb9e869ac056dac9e6ed7cbcb3240d25a\"",
+          "lastModified": "Sun, 04 Oct 2026 16:06:15 GMT",
           "resolvedUrl": "https://api.github.com/repos/google/adk-python/tags?per_page=10",
           "status": 200,
           "url": "https://api.github.com/repos/google/adk-python/tags?per_page=10"
@@ -618,9 +618,9 @@
       "status": "ok"
     },
     "google-models": {
-      "contentHash": "dcd271ec4ebee5b07949856253cb5cdd74cb643f7b87b9a23ea9c712ef4afcc1",
+      "contentHash": "e282fac22e7bbe51a8bdaa5862f410e9159fcd2138780d8b6d9542d21b98f64a",
       "entityId": "provider-google",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html; charset=utf-8",
@@ -635,9 +635,9 @@
       "status": "ok"
     },
     "google-release-notes": {
-      "contentHash": "f4014e635600ac31af23dc9546fef9383c8554d42abd53328d8e3f7c82a1c32f",
+      "contentHash": "81cf18a4b4fbebca023a59d2df1076cc01a62c8172b0d290ed848968efa648d6",
       "entityId": "provider-google",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html; charset=utf-8",
@@ -652,9 +652,9 @@
       "status": "ok"
     },
     "ietf-oauth-documents": {
-      "contentHash": "fe9b55f87e82232f41e9c1a461bd01d60505350315e1813085800cd4b036645c",
+      "contentHash": "ae71b31d92a153c061c7570ec643ba1982d420e52c01a640f448ce1aa68475f1",
       "entityId": "standard-oauth",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html; charset=utf-8",
@@ -669,9 +669,9 @@
       "status": "ok"
     },
     "iosco-publications": {
-      "contentHash": "a35eb7309db7b195917e8f57888594da10b70a5524b74b503668113179c6751c",
+      "contentHash": "7e00b74e753525786651fc8068a31bc889bb8c8100d50320509b68733637ec35",
       "entityId": "regulator-iosco",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html;charset=UTF-8",
@@ -699,21 +699,21 @@
       "status": "restricted"
     },
     "langgraph-repo": {
-      "contentHash": "7a9b212bae433dc245169d9326bb1f52fd839131a66df19aa12da5eb5f8233d0",
+      "contentHash": "6f795423f47f84f0b83e70f6e13455006e51e841a1398da01dbc1d491251dfdd",
       "entityId": "runtime-langgraph",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"85322c4a3c21c95b7f620ad01214ac3a5ab53f19f69e94853a971092fdcdd0dc\"",
-          "lastModified": "Sun, 04 Oct 2026 05:52:03 GMT",
+          "etag": "\"49e264e25077dd7fd89e131fb4b2a824befa5b2aa90f673cf4e355fbd5bf0369\"",
+          "lastModified": "Sun, 04 Oct 2026 16:32:22 GMT",
           "resolvedUrl": "https://api.github.com/repos/langchain-ai/langgraph",
           "status": 200,
           "url": "https://api.github.com/repos/langchain-ai/langgraph"
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"111ef4696d6e9cab0be08b80a5698786c31da5fc01d71765875284ef1440effe\"",
+          "etag": "\"e9ff2e8ddd4374f156afc36f0be0c5272e458c4dd580bbbfeca2d2420758c561\"",
           "lastModified": "",
           "resolvedUrl": "https://api.github.com/repos/langchain-ai/langgraph/releases?per_page=10",
           "status": 200,
@@ -721,8 +721,8 @@
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"15a986f914e1b7bab365df593045cc035b8a41e937b7b7d292e1c99a196d1794\"",
-          "lastModified": "Sun, 04 Oct 2026 05:52:03 GMT",
+          "etag": "\"bd7154d218c57e5545505d0a17c76d3ce933ac50f8d49f66ec0a2717f2aff3b8\"",
+          "lastModified": "Sun, 04 Oct 2026 16:32:22 GMT",
           "resolvedUrl": "https://api.github.com/repos/langchain-ai/langgraph/tags?per_page=10",
           "status": 200,
           "url": "https://api.github.com/repos/langchain-ai/langgraph/tags?per_page=10"
@@ -732,21 +732,21 @@
       "status": "ok"
     },
     "llamaindex-repo": {
-      "contentHash": "29e55e19a4822596ce372538b8ad14256b643da9378319dd678e509862f38c1f",
+      "contentHash": "e016d94d8bc60f5329e8c63271c96bda57ea723ced57813039ff1f90a0c187d3",
       "entityId": "runtime-llamaindex",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"be2f6df8b1ab5a8f5f51def0ec3b5d1f506b2e193fa8d4b202473522e5e8c70d\"",
-          "lastModified": "Sun, 04 Oct 2026 05:59:04 GMT",
+          "etag": "\"18ff0f5e27fad8cc085dec598017c1c0bea3b18cd90d08520e9f08e29ca13a5f\"",
+          "lastModified": "Sun, 04 Oct 2026 14:50:25 GMT",
           "resolvedUrl": "https://api.github.com/repos/run-llama/llama_index",
           "status": 200,
           "url": "https://api.github.com/repos/run-llama/llama_index"
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"cb73337438588a1d83a4bb8ca80e9453702bb9e62ec96f2ad5479d3775b0a910\"",
+          "etag": "\"2a4d6880e143757947af4230eedc3531798e0b0f87e0fb1eb800bd951933c3c6\"",
           "lastModified": "",
           "resolvedUrl": "https://api.github.com/repos/run-llama/llama_index/releases?per_page=10",
           "status": 200,
@@ -754,8 +754,8 @@
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"904d441fbc60de0f86d3107463f06c5255cc58cbda6bc81adb51911946d56baa\"",
-          "lastModified": "Sun, 04 Oct 2026 05:59:04 GMT",
+          "etag": "\"563f53f650d4df9537fb4056a6d37689a77f2184cb78d441f12b0b4c17c9da90\"",
+          "lastModified": "Sun, 04 Oct 2026 14:50:25 GMT",
           "resolvedUrl": "https://api.github.com/repos/run-llama/llama_index/tags?per_page=10",
           "status": 200,
           "url": "https://api.github.com/repos/run-llama/llama_index/tags?per_page=10"
@@ -765,9 +765,9 @@
       "status": "ok"
     },
     "mas-regulation": {
-      "contentHash": "bd29298f6969894775daa9fcd99f1e316e88b02e5a21c0075b7a2b08420815c0",
+      "contentHash": "3f4bc1930df300e70962f2b86d747bad3a9a58668cabcb94abef84044a8091a3",
       "entityId": "regulator-mas",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html",
@@ -795,21 +795,21 @@
       "status": "restricted"
     },
     "mcp-repo": {
-      "contentHash": "4a0ea88e31c3c5c460bc742c741746d4b43f10d7f127701a0c8c1896f6f9cc6c",
+      "contentHash": "46a45ddf9e7c65eb5de719123e67221c76d394bfa6cef445a544024b00a39f52",
       "entityId": "protocol-mcp",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"5739c9fc4f7153a0eeb4ae6085a29cac31735eb59cf4706b45665eb858f00179\"",
-          "lastModified": "Sun, 04 Oct 2026 03:10:48 GMT",
+          "etag": "\"e1e6c0ab19c4f45dd02771b69d75d1dca68ad1a2a5a0abe6c876683e66ea0842\"",
+          "lastModified": "Sun, 04 Oct 2026 14:13:16 GMT",
           "resolvedUrl": "https://api.github.com/repos/modelcontextprotocol/modelcontextprotocol",
           "status": 200,
           "url": "https://api.github.com/repos/modelcontextprotocol/modelcontextprotocol"
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"991fad3a1ce7bfb478a67264d880a8da3b3c6d05fdee1467d1290c97f87b43bf\"",
+          "etag": "\"a1b078d44b7b4f20394904b3797ac23c3ab6379947f3141d4b5ad44938544867\"",
           "lastModified": "",
           "resolvedUrl": "https://api.github.com/repos/modelcontextprotocol/modelcontextprotocol/releases?per_page=10",
           "status": 200,
@@ -817,8 +817,8 @@
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"2cc1739dad88e6da3d8cab9918fe3ac16b611a575cab2977e056bcbd584108f3\"",
-          "lastModified": "Sun, 04 Oct 2026 03:10:48 GMT",
+          "etag": "\"59b0cf812937a0bb27f6100d1e45af81057ef45856c18d729fcd3b5419cad130\"",
+          "lastModified": "Sun, 04 Oct 2026 14:13:16 GMT",
           "resolvedUrl": "https://api.github.com/repos/modelcontextprotocol/modelcontextprotocol/tags?per_page=10",
           "status": 200,
           "url": "https://api.github.com/repos/modelcontextprotocol/modelcontextprotocol/tags?per_page=10"
@@ -845,21 +845,21 @@
       "status": "ok"
     },
     "meta-llama": {
-      "contentHash": "13f81067fb7e275e95f91280a032049fded008559c2a8bedb145d07274802e5f",
+      "contentHash": "229c62d2affcf2f471273cb66b496f1b9d56ba60467f841eb59a5694731d79ea",
       "entityId": "provider-meta",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"0940dcdfac2d5fd4b4c5df7187ace643055aaf3c673593ae4fdecba00800b207\"",
-          "lastModified": "Sun, 04 Oct 2026 01:34:25 GMT",
+          "etag": "\"db801396f8f3f5ee1a48fcda1a8602efe5e6a76579055e113e028f868d90d5f5\"",
+          "lastModified": "Sun, 04 Oct 2026 14:58:32 GMT",
           "resolvedUrl": "https://api.github.com/repos/meta-llama/llama-models",
           "status": 200,
           "url": "https://api.github.com/repos/meta-llama/llama-models"
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"402e8dc9276d7137835d55a4bdc37750ff01180c3e54c9a4c99bba3dbd916369\"",
+          "etag": "\"967ce32ac87d764e280275b3e502d0041e644d308c1e2c0fb46549e25c58ca94\"",
           "lastModified": "",
           "resolvedUrl": "https://api.github.com/repos/meta-llama/llama-models/releases?per_page=10",
           "status": 200,
@@ -867,8 +867,8 @@
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"df3885abd10f7bf2f78d085ccc11cf17d0ec871af1ac22447e3c1151f40bc9da\"",
-          "lastModified": "Sun, 04 Oct 2026 01:34:25 GMT",
+          "etag": "\"28bc4307a59be33cccfd60bfb83ab08c6c066b62200e750c57a5431dcb1893c7\"",
+          "lastModified": "Sun, 04 Oct 2026 14:58:32 GMT",
           "resolvedUrl": "https://api.github.com/repos/meta-llama/llama-models/tags?per_page=10",
           "status": 200,
           "url": "https://api.github.com/repos/meta-llama/llama-models/tags?per_page=10"
@@ -925,21 +925,21 @@
       "status": "restricted"
     },
     "openai-agents-repo": {
-      "contentHash": "55ae713d504be372511a1a7b35ce15538921369a547b1fa74609739856f7cfe1",
+      "contentHash": "32bbce9b9ee63edc923164f9dd49b6a4674defd15e3569e10515d9ac474ce603",
       "entityId": "runtime-openai-agents",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"b238d8159fcb2d1f7b288883a71e1df44cb64ca8111b5a02b99bc5a00abc5937\"",
-          "lastModified": "Sun, 04 Oct 2026 04:22:58 GMT",
+          "etag": "\"37e928491e50655d31a3f896814207ea35f39c35aecb14cb86074ab71036479c\"",
+          "lastModified": "Sun, 04 Oct 2026 16:02:13 GMT",
           "resolvedUrl": "https://api.github.com/repos/openai/openai-agents-python",
           "status": 200,
           "url": "https://api.github.com/repos/openai/openai-agents-python"
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"e38fc73c5529e405f3e0b91c2086362b2e1f5d86bb7215698e50094583220b6a\"",
+          "etag": "\"e4687cf31ee653ba3183ad68f07bbc3106b1d4cf1399f4991b94c761636b6c03\"",
           "lastModified": "",
           "resolvedUrl": "https://api.github.com/repos/openai/openai-agents-python/releases?per_page=10",
           "status": 200,
@@ -947,8 +947,8 @@
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"e744c28bb9df687c7a5823f24bccbeef4b15e2b9459bc9c560b180676e677090\"",
-          "lastModified": "Sun, 04 Oct 2026 04:22:58 GMT",
+          "etag": "\"4b1c3d33bfc2bcc86d71409cbdaff93aa49cc851ba3c9aa971a6624f3f04b289\"",
+          "lastModified": "Sun, 04 Oct 2026 16:02:13 GMT",
           "resolvedUrl": "https://api.github.com/repos/openai/openai-agents-python/tags?per_page=10",
           "status": 200,
           "url": "https://api.github.com/repos/openai/openai-agents-python/tags?per_page=10"
@@ -958,9 +958,9 @@
       "status": "ok"
     },
     "openai-models": {
-      "contentHash": "34778a713e7be2f1d8cf3b3cf091106b53b1eac439db1568917f91f1d073646b",
+      "contentHash": "179af7d1d938e614dfd82641fbe92239be76e5f8d6e2e8bbcc452c5b4f9de186",
       "entityId": "provider-openai",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html",
@@ -975,14 +975,14 @@
       "status": "ok"
     },
     "openai-release-notes": {
-      "contentHash": "f03a42e989fa636415633c347d06ef7b65c534b3a5c04a9cb75256aa6d261c95",
+      "contentHash": "2e335392dfef59da9895ad038d66357c794b7de66b9eda1d05e385d12ae293a8",
       "entityId": "provider-openai",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html; charset=utf-8",
-          "etag": "\"8951e209911139bf871d587473a85ba3\"",
-          "lastModified": "Sun, 04 Oct 2026 05:39:20 GMT",
+          "etag": "\"0940925449d44552a63f71a92f28372f\"",
+          "lastModified": "Sun, 04 Oct 2026 08:14:23 GMT",
           "resolvedUrl": "https://developers.openai.com/api/docs/changelog",
           "status": 200,
           "url": "https://developers.openai.com/api/docs/changelog"
@@ -992,9 +992,9 @@
       "status": "ok"
     },
     "openid-fapi": {
-      "contentHash": "bbb249338434caefd09312a6068326219c432961409d9bc824197d7299a2b0b8",
+      "contentHash": "e3618073aca3f9d31aaf19df9163c3880dd16d421451a0538d5183f47cb1e64e",
       "entityId": "standard-fapi",
-      "observedAt": "2026-10-03T16:25:50Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html; charset=UTF-8",
@@ -1043,21 +1043,21 @@
       "status": "ok"
     },
     "pydantic-ai-repo": {
-      "contentHash": "5bc66ddba2e5b1c466461e1d0640d08c6f6a2270076b56b11619ed2431dedc38",
+      "contentHash": "8a688a9191d54d5ed48df06b8bb28415fbd1f0fe86c6e9be3643fd99582340a5",
       "entityId": "runtime-pydantic-ai",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"1fd4845a0f1bfe79222757a4cdf02263fdb1ace482ff43dbdfc45ecadd1ec2e1\"",
-          "lastModified": "Sun, 04 Oct 2026 00:54:52 GMT",
+          "etag": "\"cd8aa48ddadae9747f4569a635bf4333d3660e58df1525fb017ce4584dd7d71f\"",
+          "lastModified": "Sun, 04 Oct 2026 16:26:36 GMT",
           "resolvedUrl": "https://api.github.com/repos/pydantic/pydantic-ai",
           "status": 200,
           "url": "https://api.github.com/repos/pydantic/pydantic-ai"
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"1ce4c75b7dcbf2309aea3493f3bd4a20ebe1e3b5639f3a02d09d090282db8a17\"",
+          "etag": "\"445f136ba226a37168da46944912acec6ff8ce4b5964a70683d633a62e72591e\"",
           "lastModified": "",
           "resolvedUrl": "https://api.github.com/repos/pydantic/pydantic-ai/releases?per_page=10",
           "status": 200,
@@ -1065,8 +1065,8 @@
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"f87f92532cb4e3ce1ce260ad3982521098a12fb58b226b3cd52847434e9be94e\"",
-          "lastModified": "Sun, 04 Oct 2026 00:54:52 GMT",
+          "etag": "\"b937e8400f97278114027768455490b94700ef5cdb471372dd10c57d0f38b0be\"",
+          "lastModified": "Sun, 04 Oct 2026 16:26:36 GMT",
           "resolvedUrl": "https://api.github.com/repos/pydantic/pydantic-ai/tags?per_page=10",
           "status": 200,
           "url": "https://api.github.com/repos/pydantic/pydantic-ai/tags?per_page=10"
@@ -1076,9 +1076,9 @@
       "status": "ok"
     },
     "rbi-notifications": {
-      "contentHash": "ad8f0b80a50f553184a48bd95ff3eed5f0218603b5110d58830d1592000a873b",
+      "contentHash": "20d6d2761a65da3af0fe9e0a5bb27666923ce2cba41ae6cad4caca1fdd381edc",
       "entityId": "regulator-rbi",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html; charset=utf-8",
@@ -1093,9 +1093,9 @@
       "status": "ok"
     },
     "sebi-circulars": {
-      "contentHash": "30f531f7428903c7bccfab00df10f0401c665e08912d3362a395f598228a93a6",
+      "contentHash": "0d5ee62366c4e306561b4fbed2864856385383037248652000840e1fa07fbfd7",
       "entityId": "regulator-sebi",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html;charset=UTF-8",
@@ -1123,21 +1123,21 @@
       "status": "restricted"
     },
     "semantic-kernel-repo": {
-      "contentHash": "f55b8b6a957b4d36a7cda3da0c29f9ea42e2eb8ab4127926ea4c3fced8a5b246",
+      "contentHash": "846400cfb3b7151da6d38abae13fe1e90a21c0d2a8e7b78269d6005bcdead19b",
       "entityId": "runtime-semantic-kernel",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"d2db12703f63d97a8ba4ae5428783ff5763d07aeb36a931a88e721b690cab18e\"",
-          "lastModified": "Sun, 04 Oct 2026 01:19:40 GMT",
+          "etag": "\"9f554a6e00d0023faeebfb1e2dbd684b2ad7fa25b9ee69c03bb2a7c16d066b22\"",
+          "lastModified": "Sun, 04 Oct 2026 14:21:03 GMT",
           "resolvedUrl": "https://api.github.com/repos/microsoft/semantic-kernel",
           "status": 200,
           "url": "https://api.github.com/repos/microsoft/semantic-kernel"
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"21f6d036c92ad808c84996de243ffbc6b59f21e7ddd3c915d41f26d2ef388e06\"",
+          "etag": "\"79f246e80f7794703faa2a867946b986a0ee5e6bf118f75653ab6aa4cd385d82\"",
           "lastModified": "",
           "resolvedUrl": "https://api.github.com/repos/microsoft/semantic-kernel/releases?per_page=10",
           "status": 200,
@@ -1145,8 +1145,8 @@
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"8b6d311c380ce16f2f1ed44561d80a7ea2becf5d26188afe770e48ce8d2c2130\"",
-          "lastModified": "Sun, 04 Oct 2026 01:19:40 GMT",
+          "etag": "\"d7e54a7bf23fe03fc447104b7132ed86bb64926eb74059b4c70bd4258482d19f\"",
+          "lastModified": "Sun, 04 Oct 2026 14:21:03 GMT",
           "resolvedUrl": "https://api.github.com/repos/microsoft/semantic-kernel/tags?per_page=10",
           "status": 200,
           "url": "https://api.github.com/repos/microsoft/semantic-kernel/tags?per_page=10"
@@ -1156,9 +1156,9 @@
       "status": "ok"
     },
     "solana-docs": {
-      "contentHash": "1a5c6795692dc438403891376a14c231fc4d33508895dcbb89ef29314dc71769",
+      "contentHash": "5fe5b4e8b5a0f9ccee4053c3296085921632ecf085a9767977281b8cf74a9de5",
       "entityId": "chain-solana",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html; charset=utf-8",
@@ -1186,9 +1186,9 @@
       "status": "restricted"
     },
     "tch-rtp": {
-      "contentHash": "0b7bdcde69a21c7837a4c2636027453c85cc13f016d9ac621105a38f3b7868ec",
+      "contentHash": "6f5e1863d8a83687fa05055619073dfa1db602a3e68647e70e17c1beba2b8895",
       "entityId": "rail-rtp",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html; charset=utf-8",
@@ -1305,13 +1305,13 @@
       "status": "ok"
     },
     "x402-repo": {
-      "contentHash": "dd2fa0b2eec9a0ef9165b0651d751ce317e29703909f7d076d9993ffa27530eb",
+      "contentHash": "fb4f9bd8b33d858860d0f1f778eb0e6b9d3841bd15b47484b42a8996c8251d20",
       "entityId": "protocol-x402",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"c0ed3eb7a36be25c82b388f85b105c836400bb85312302bfb9ac9ccf569f9f71\"",
+          "etag": "\"e488a0e9d69cd87a2b624a31a4558b3114121f4eb3367deb3898faf9eb8b831b\"",
           "lastModified": "Wed, 30 Sep 2026 08:21:16 GMT",
           "resolvedUrl": "https://api.github.com/repos/coinbase/x402",
           "status": 200,
@@ -1319,7 +1319,7 @@
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"af2a7e56bf010ce561b05ce18e041f1b2ceb9b3b6a52754ddbdef1fb0006e851\"",
+          "etag": "\"c653da48bbc91bc253e771fc175549e542a9c2bf5bef9e83cbe6d283479de5ad\"",
           "lastModified": "",
           "resolvedUrl": "https://api.github.com/repos/coinbase/x402/releases?per_page=10",
           "status": 200,
@@ -1327,7 +1327,7 @@
         },
         {
           "contentType": "application/json; charset=utf-8",
-          "etag": "\"902aad3b0c7f9de9081b39fd9344e15966981e3dae7db059bd6d3165a960db99\"",
+          "etag": "\"4a02f043f0501ebf769774db0a288fef31e94c2c44081c284bdcbe26da3d693b\"",
           "lastModified": "Wed, 30 Sep 2026 08:21:16 GMT",
           "resolvedUrl": "https://api.github.com/repos/coinbase/x402/tags?per_page=10",
           "status": 200,
@@ -1338,9 +1338,9 @@
       "status": "ok"
     },
     "xai-models": {
-      "contentHash": "d6f4ccd1e6fd9d299d4daba27f91d9f639caafffb90c7111fb88d97588c1c0c2",
+      "contentHash": "6c44a7988f5330e6a42a464aa0013c8f4f3e5f122cf8badebdf508755701ea44",
       "entityId": "provider-xai",
-      "observedAt": "2026-10-04T05:58:34Z",
+      "observedAt": "2026-10-04T16:52:39Z",
       "responses": [
         {
           "contentType": "text/html; charset=utf-8",
