@@ -292,6 +292,18 @@
       "status": "tracked"
     },
     {
+      "id": "rail-nano-xno",
+      "name": "Nano (XNO)",
+      "type": "payment_rail",
+      "domains": [
+        "blockchain_payments",
+        "agentic_payments"
+      ],
+      "steward": "Nano Foundation",
+      "jurisdiction": "global",
+      "status": "tracked"
+    },
+    {
       "id": "chain-ethereum",
       "name": "Ethereum",
       "type": "infrastructure_provider",
